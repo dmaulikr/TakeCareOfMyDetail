@@ -12,6 +12,8 @@
 		D5C961CE1D5C362800D984E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C961CC1D5C362800D984E4 /* Main.storyboard */; };
 		D5C961D01D5C362800D984E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C961CF1D5C362800D984E4 /* Assets.xcassets */; };
 		D5C961D31D5C362800D984E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C961D11D5C362800D984E4 /* LaunchScreen.storyboard */; };
+		D5C961DB1D5C381000D984E4 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C961DA1D5C381000D984E4 /* Student.swift */; };
+		D5C961DD1D5C393600D984E4 /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C961DC1D5C393600D984E4 /* StudentTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D5C961CF1D5C362800D984E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5C961D21D5C362800D984E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5C961D41D5C362800D984E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5C961DA1D5C381000D984E4 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		D5C961DC1D5C393600D984E4 /* StudentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,11 @@
 				D5C961C81D5C362800D984E4 /* AppDelegate.swift */,
 				D5C961CA1D5C362800D984E4 /* ViewController.swift */,
 				D5C961CC1D5C362800D984E4 /* Main.storyboard */,
+				D5C961DC1D5C393600D984E4 /* StudentTableViewController.swift */,
 				D5C961CF1D5C362800D984E4 /* Assets.xcassets */,
 				D5C961D11D5C362800D984E4 /* LaunchScreen.storyboard */,
 				D5C961D41D5C362800D984E4 /* Info.plist */,
+				D5C961DA1D5C381000D984E4 /* Student.swift */,
 			);
 			path = FirifafaDetail;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5C961CB1D5C362800D984E4 /* ViewController.swift in Sources */,
+				D5C961DB1D5C381000D984E4 /* Student.swift in Sources */,
+				D5C961DD1D5C393600D984E4 /* StudentTableViewController.swift in Sources */,
 				D5C961C91D5C362800D984E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +294,7 @@
 				D5C961D91D5C362800D984E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
