@@ -27,4 +27,9 @@ class Event {
         self.memo = "text"
     }
     
+    init(){
+        self.name = "제목 없는 일정"
+        self.start = (2016,08,11,14,00)
+        self.memo = "test"
+    }
 }
