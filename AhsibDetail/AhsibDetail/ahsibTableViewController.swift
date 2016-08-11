@@ -27,15 +27,27 @@ class ahsibTableViewController: UITableViewController {
         
         let korea = SeoulTrip()
         korea.name = "고려대"
-        korea.info = "고려대예요"
+        korea.info = "안암에 있는 고려대입니다. "
         korea.subway = 3
         
         let hongdae = SeoulTrip()
-        hongdae.name = "홍대_신촌"
-        hongdae.info = "홍대_신촌이예요"
+        hongdae.name = "홍대"
+        hongdae.info = "홍대입니다. 20대의 젊은 사람들이 많이 찾는 공간입니다."
         hongdae.subway = 2
         
-        trip += [korea,hongdae]
+        let sinchon = SeoulTrip()
+        sinchon.name = "신촌"
+        sinchon.info = "대학가들이 많은신촌입니다."
+        sinchon.subway = 2
+        
+        let bucchon = SeoulTrip()
+        bucchon.name = "북촌"
+        bucchon.info = "북촌입니다. 이쁜 한옥이 많고 외국인들을 상대로하는 가게들이 많습니다."
+        bucchon.subway = 2
+
+        
+        
+        trip += [korea,hongdae,sinchon,bucchon]
         
     }
 
@@ -48,23 +60,25 @@ class ahsibTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return trip.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("triptrip", forIndexPath: indexPath)
 
-        // Configure the cell...
+        let currentTrip = trip[indexPath.row]
+        cell.textLabel!.text=currentTrip.name
+        cell.detailTextLabel?.text = String(currentTrip.info)
 
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.
