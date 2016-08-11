@@ -25,8 +25,7 @@ class ahsibTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let korea = SeoulTrip()
-        korea.name = "고려대"
+        let korea = SeoulTrip(name: "고려대")
         korea.info = "안암에 있는 고려대입니다. 9월에는 고연전이 있죠! "
         korea.subway = 3
         
