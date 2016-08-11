@@ -12,6 +12,8 @@
 		EDB21FF31D5C3621000C08CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB21FF11D5C3621000C08CA /* Main.storyboard */; };
 		EDB21FF51D5C3621000C08CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDB21FF41D5C3621000C08CA /* Assets.xcassets */; };
 		EDB21FF81D5C3621000C08CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDB21FF61D5C3621000C08CA /* LaunchScreen.storyboard */; };
+		EDB220021D5C3991000C08CA /* Sport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB220011D5C3991000C08CA /* Sport.swift */; };
+		EDB220041D5C44D9000C08CA /* SportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB220031D5C44D9000C08CA /* SportTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		EDB21FF41D5C3621000C08CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDB21FF71D5C3621000C08CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDB21FF91D5C3621000C08CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDB220011D5C3991000C08CA /* Sport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sport.swift; sourceTree = "<group>"; };
+		EDB220031D5C44D9000C08CA /* SportTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SportTableViewCell.swift; path = ../SportTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,14 @@
 		EDB21FEC1D5C3621000C08CA /* Rkdthd1234Detail */ = {
 			isa = PBXGroup;
 			children = (
+				EDB220031D5C44D9000C08CA /* SportTableViewCell.swift */,
 				EDB21FED1D5C3621000C08CA /* AppDelegate.swift */,
 				EDB21FEF1D5C3621000C08CA /* ViewController.swift */,
 				EDB21FF11D5C3621000C08CA /* Main.storyboard */,
 				EDB21FF41D5C3621000C08CA /* Assets.xcassets */,
 				EDB21FF61D5C3621000C08CA /* LaunchScreen.storyboard */,
 				EDB21FF91D5C3621000C08CA /* Info.plist */,
+				EDB220011D5C3991000C08CA /* Sport.swift */,
 			);
 			path = Rkdthd1234Detail;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDB21FF01D5C3621000C08CA /* ViewController.swift in Sources */,
+				EDB220021D5C3991000C08CA /* Sport.swift in Sources */,
+				EDB220041D5C44D9000C08CA /* SportTableViewCell.swift in Sources */,
 				EDB21FEE1D5C3621000C08CA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +294,7 @@
 				EDB21FFE1D5C3621000C08CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
