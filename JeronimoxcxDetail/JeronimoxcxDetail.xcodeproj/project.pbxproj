@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDB641B91D5C4730009D9773 /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB641B81D5C4730009D9773 /* Brewery.swift */; };
+		DDB641BD1D5C480F009D9773 /* BreweryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB641BC1D5C480F009D9773 /* BreweryTableViewController.swift */; };
 		DDCADB691D5C363100E25751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCADB681D5C363100E25751 /* AppDelegate.swift */; };
 		DDCADB6B1D5C363100E25751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCADB6A1D5C363100E25751 /* ViewController.swift */; };
 		DDCADB6E1D5C363100E25751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCADB6C1D5C363100E25751 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DDB641B81D5C4730009D9773 /* Brewery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brewery.swift; sourceTree = "<group>"; };
+		DDB641BC1D5C480F009D9773 /* BreweryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweryTableViewController.swift; sourceTree = "<group>"; };
 		DDCADB651D5C363100E25751 /* JeronimoxcxDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JeronimoxcxDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDCADB681D5C363100E25751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDCADB6A1D5C363100E25751 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				DDCADB6F1D5C363100E25751 /* Assets.xcassets */,
 				DDCADB711D5C363100E25751 /* LaunchScreen.storyboard */,
 				DDCADB741D5C363100E25751 /* Info.plist */,
+				DDB641B81D5C4730009D9773 /* Brewery.swift */,
+				DDB641BC1D5C480F009D9773 /* BreweryTableViewController.swift */,
 			);
 			path = JeronimoxcxDetail;
 			sourceTree = "<group>";
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB641BD1D5C480F009D9773 /* BreweryTableViewController.swift in Sources */,
 				DDCADB6B1D5C363100E25751 /* ViewController.swift in Sources */,
+				DDB641B91D5C4730009D9773 /* Brewery.swift in Sources */,
 				DDCADB691D5C363100E25751 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +294,7 @@
 				DDCADB791D5C363100E25751 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
