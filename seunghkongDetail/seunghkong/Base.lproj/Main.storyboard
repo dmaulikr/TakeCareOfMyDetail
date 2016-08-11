@@ -21,12 +21,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="237" y="293"/>
+            <point key="canvasLocation" x="2" y="293"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Player Table View Controller-->
         <scene sceneID="d3O-Fq-wsq">
             <objects>
-                <tableViewController id="RiA-Qi-2da" sceneMemberID="viewController">
+                <tableViewController id="RiA-Qi-2da" customClass="PlayerTableViewController" customModule="seunghkongDetail" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2E5-Nh-obv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
