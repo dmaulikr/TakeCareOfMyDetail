@@ -40,8 +40,8 @@ class TravelWhere {
     var initCardBudget:Double = 0
     var initCashBudget:Double = 0
     var initTotalBudget:Double = 0
-    var plan : String?
-    var items : [Item]?
+    
+    var items : [Item] = []
     
     init(_ _title:String, _ _period:Double, _ _cardBudget:Double, _ _cashBudget:Double){
         
@@ -56,62 +56,62 @@ class TravelWhere {
     
     // 1. 지불수단별로 아이템들 계산하여 카드쓴돈, 현금쓴돈, 모두쓴돈, 카드남은돈, 현금쓴돈, 모두남은돈 리턴
     
-    func PayByBudget() -> (cardSpend:Double, cashSpend:Double, totalSpend:Double, cardRemian:Double, cashRemain:Double, totalRemain:Double){
-        
-        var card:Double = 0
-        var cash:Double = 0
-        
-        
-        if let items = items{
-            let cardContent = items.filter({ $0.pay == "card" })
-            
-            for i in cardContent{
-                card += i.price
-            }
-            
-            let cashContent = items.filter({ $0.pay == "cash" })
-            
-            for i in cashContent{
-                cash += i.price
-            }
-        }
-        
-        let cardremain = initCardBudget-card
-        let cashremain = initCashBudget-cash
-        let totalspend = card + cash
-        let totalremain = cardremain + cashremain
-        
-        return (card,cash,totalspend,cardremain,cashremain,totalremain)
-        
-    }
-    
-    
-    // 2. 화폐단위별로 아이템들 계산해주는 함수
-    
-    
-    // 3. 지불수단별로 아이템들 분류한 배열을 리턴하는 함수
-    
-    func itemsByPay() -> (cardItems:[Item], cashItems:[Item]){
-        
-        var card:[Item] = []
-        var cash:[Item] = []
-        
-        if let items = items{
-            let carditems = items.filter({ $0.pay == "card" })
-            card = carditems
-            
-            let cashitems = items.filter({ $0.pay == "cash" })
-            cash = cashitems
-            
-        }
-        
-        return(card,cash)
-    }
-    
-    // 4. 날짜별로 아이템 분류하는 배열 리턴하는 함수
-    
-    // 5. 데이트피커로 받은 데이터값을 이용해 년,월,일로 나누어 print해주는 함수
-    // 비용추가페이지에서 추가시킬 날짜를 선택하도록 하고 보여주는 페이지는 전체 목록을 보여주기(비용추가에서 날짜선택 기본값은 전에 입력했던 값으로 해노음)
+//    func PayByBudget() -> (cardSpend:Double, cashSpend:Double, totalSpend:Double, cardRemian:Double, cashRemain:Double, totalRemain:Double){
+//        
+//        var card:Double = 0
+//        var cash:Double = 0
+//        
+//        
+//        if let items = items{
+//            let cardContent = items.filter({ $0.pay == "card" })
+//            
+//            for i in cardContent{
+//                card += i.price
+//            }
+//            
+//            let cashContent = items.filter({ $0.pay == "cash" })
+//            
+//            for i in cashContent{
+//                cash += i.price
+//            }
+//        }
+//        
+//        let cardremain = initCardBudget-card
+//        let cashremain = initCashBudget-cash
+//        let totalspend = card + cash
+//        let totalremain = cardremain + cashremain
+//        
+//        return (card,cash,totalspend,cardremain,cashremain,totalremain)
+//        
+//    }
+//    
+//    
+//    // 2. 화폐단위별로 아이템들 계산해주는 함수
+//    
+//    
+//    // 3. 지불수단별로 아이템들 분류한 배열을 리턴하는 함수
+//    
+//    func itemsByPay() -> (cardItems:[Item], cashItems:[Item]){
+//        
+//        var card:[Item] = []
+//        var cash:[Item] = []
+//        
+//        if let items = items{
+//            let carditems = items.filter({ $0.pay == "card" })
+//            card = carditems
+//            
+//            let cashitems = items.filter({ $0.pay == "cash" })
+//            cash = cashitems
+//            
+//        }
+//        
+//        return(card,cash)
+//    }
+//    
+//    // 4. 날짜별로 아이템 분류하는 배열 리턴하는 함수
+//    
+//    // 5. 데이트피커로 받은 데이터값을 이용해 년,월,일로 나누어 print해주는 함수
+//    // 비용추가페이지에서 추가시킬 날짜를 선택하도록 하고 보여주는 페이지는 전체 목록을 보여주기(비용추가에서 날짜선택 기본값은 전에 입력했던 값으로 해노음)
     
     
 }

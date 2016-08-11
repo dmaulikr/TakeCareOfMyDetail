@@ -9,7 +9,11 @@
 import UIKit
 
 class TravelTableViewController: UITableViewController {
+    
+    
+    var japanTravel:TravelWhere = TravelWhere("Japan", 2016.08 , 4000, 3000)
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,12 +27,11 @@ class TravelTableViewController: UITableViewController {
         let japanItem2 = Item(2000, "yen", "cash", "sleeping", "2016-08-02")
         let japanItem3 = Item(3000, "won", "card", "moving", "2016-08-03")
         
-        let japanTravel = TravelWhere("Japan", 2016.08 , 4000, 3000)
-        japanTravel.plan = "일본여행입니다"
+        
         japanTravel.items = [japanItem1,japanItem2,japanItem3]
-      
         
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -51,11 +54,12 @@ class TravelTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("TravelCell", forIndexPath: indexPath)
         
-        let item = japanTravel.items[indexPath]
-        // Configure the cell...
-
-        return cell
-    }
+        let items = japanTravel.items[indexPath.row]
+        
+        cell.textLabel!.text = items.category
+        cell.detailTextLabel?.text = String(items.price)
+        
+        return cell    }
     
 
     /*
