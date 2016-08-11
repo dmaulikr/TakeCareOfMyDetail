@@ -23,12 +23,15 @@ class PlayerTableViewController: UITableViewController {
         let mino = Player(name: "강민호")
         mino.position = 0
         mino.average = 3.00
+        mino.description = "blah blah blah blah..."
         
         let jongyoon = Player(name: "박종윤")
-        jongyoon.position = 0
+        jongyoon.position = 1
         jongyoon.average = 2.99
         
         players += [mino, jongyoon]
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
