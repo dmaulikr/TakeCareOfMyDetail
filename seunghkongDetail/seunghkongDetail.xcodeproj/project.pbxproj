@@ -14,6 +14,8 @@
 		15AB4F001D5C364E00993F23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15AB4EFE1D5C364E00993F23 /* LaunchScreen.storyboard */; };
 		15AB4F0B1D5C364E00993F23 /* seunghkongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB4F0A1D5C364E00993F23 /* seunghkongTests.swift */; };
 		15AB4F161D5C364E00993F23 /* seunghkongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB4F151D5C364E00993F23 /* seunghkongUITests.swift */; };
+		15AB4F241D5C384C00993F23 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB4F231D5C384C00993F23 /* Player.swift */; };
+		15AB4F261D5C396B00993F23 /* PlayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AB4F251D5C396B00993F23 /* PlayerTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		15AB4F111D5C364E00993F23 /* seunghkongDetail.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = seunghkongDetail.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15AB4F151D5C364E00993F23 /* seunghkongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seunghkongUITests.swift; sourceTree = "<group>"; };
 		15AB4F171D5C364E00993F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15AB4F231D5C384C00993F23 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		15AB4F251D5C396B00993F23 /* PlayerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,11 @@
 				15AB4EF51D5C364E00993F23 /* AppDelegate.swift */,
 				15AB4EF71D5C364E00993F23 /* ViewController.swift */,
 				15AB4EF91D5C364E00993F23 /* Main.storyboard */,
+				15AB4F251D5C396B00993F23 /* PlayerTableViewController.swift */,
 				15AB4EFC1D5C364E00993F23 /* Assets.xcassets */,
 				15AB4EFE1D5C364E00993F23 /* LaunchScreen.storyboard */,
 				15AB4F011D5C364E00993F23 /* Info.plist */,
+				15AB4F231D5C384C00993F23 /* Player.swift */,
 			);
 			path = seunghkong;
 			sourceTree = "<group>";
@@ -260,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				15AB4EF81D5C364E00993F23 /* ViewController.swift in Sources */,
+				15AB4F241D5C384C00993F23 /* Player.swift in Sources */,
+				15AB4F261D5C396B00993F23 /* PlayerTableViewController.swift in Sources */,
 				15AB4EF61D5C364E00993F23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
