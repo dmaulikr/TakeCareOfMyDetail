@@ -12,6 +12,8 @@
 		AC20ACC61D5C361F0057033B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC20ACC41D5C361F0057033B /* Main.storyboard */; };
 		AC20ACC81D5C361F0057033B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC20ACC71D5C361F0057033B /* Assets.xcassets */; };
 		AC20ACCB1D5C361F0057033B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC20ACC91D5C361F0057033B /* LaunchScreen.storyboard */; };
+		AC9DB8791D5C39B000EAB761 /* PlayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DB8781D5C39B000EAB761 /* PlayerTableViewController.swift */; };
+		AC9DB87D1D5C39EC00EAB761 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9DB87C1D5C39EC00EAB761 /* Fruit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		AC20ACC71D5C361F0057033B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC20ACCA1D5C361F0057033B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC20ACCC1D5C361F0057033B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC9DB8781D5C39B000EAB761 /* PlayerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewController.swift; sourceTree = "<group>"; };
+		AC9DB87C1D5C39EC00EAB761 /* Fruit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fruit.swift; path = ../Fruit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				AC20ACC71D5C361F0057033B /* Assets.xcassets */,
 				AC20ACC91D5C361F0057033B /* LaunchScreen.storyboard */,
 				AC20ACCC1D5C361F0057033B /* Info.plist */,
+				AC9DB8781D5C39B000EAB761 /* PlayerTableViewController.swift */,
+				AC9DB87C1D5C39EC00EAB761 /* Fruit.swift */,
 			);
 			path = EunjinDetail;
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC9DB87D1D5C39EC00EAB761 /* Fruit.swift in Sources */,
 				AC20ACC31D5C361F0057033B /* ViewController.swift in Sources */,
 				AC20ACC11D5C361F0057033B /* AppDelegate.swift in Sources */,
+				AC9DB8791D5C39B000EAB761 /* PlayerTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +294,7 @@
 				AC20ACD11D5C361F0057033B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
