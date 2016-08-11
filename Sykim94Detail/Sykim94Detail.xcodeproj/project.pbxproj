@@ -12,6 +12,8 @@
 		1491B6481D5C364C00C534AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1491B6461D5C364C00C534AE /* Main.storyboard */; };
 		1491B64A1D5C364C00C534AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1491B6491D5C364C00C534AE /* Assets.xcassets */; };
 		1491B64D1D5C364C00C534AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1491B64B1D5C364C00C534AE /* LaunchScreen.storyboard */; };
+		1491B6551D5C381100C534AE /* EPLTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491B6541D5C381100C534AE /* EPLTeam.swift */; };
+		1491B65B1D5C43B300C534AE /* EPLTeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1491B65A1D5C43B300C534AE /* EPLTeamTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		1491B6491D5C364C00C534AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1491B64C1D5C364C00C534AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1491B64E1D5C364C00C534AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1491B6541D5C381100C534AE /* EPLTeam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPLTeam.swift; sourceTree = "<group>"; };
+		1491B65A1D5C43B300C534AE /* EPLTeamTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EPLTeamTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				1491B6491D5C364C00C534AE /* Assets.xcassets */,
 				1491B64B1D5C364C00C534AE /* LaunchScreen.storyboard */,
 				1491B64E1D5C364C00C534AE /* Info.plist */,
+				1491B6541D5C381100C534AE /* EPLTeam.swift */,
+				1491B65A1D5C43B300C534AE /* EPLTeamTableViewController.swift */,
 			);
 			path = Sykim94Detail;
 			sourceTree = "<group>";
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1491B65B1D5C43B300C534AE /* EPLTeamTableViewController.swift in Sources */,
 				1491B6451D5C364C00C534AE /* ViewController.swift in Sources */,
 				1491B6431D5C364C00C534AE /* AppDelegate.swift in Sources */,
+				1491B6551D5C381100C534AE /* EPLTeam.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +295,7 @@
 				1491B6531D5C364C00C534AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
