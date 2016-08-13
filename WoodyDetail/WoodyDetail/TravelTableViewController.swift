@@ -11,7 +11,7 @@ import UIKit
 class TravelTableViewController: UITableViewController {
     
     
-    var japanTravel:TravelWhere = TravelWhere("Japan", 2016.08 , 4000, 3000)
+    var japanTravel:TravelWhere = TravelWhere("Japan", "2016.08.20-08.25" , Budget(3000,4000,"yen"))
 
     
     override func viewDidLoad() {
@@ -23,9 +23,9 @@ class TravelTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let japanItem1 = Item(1000, "yen", "card", "shopping", "2016-08-01")
-        let japanItem2 = Item(2000, "yen", "cash", "sleeping", "2016-08-02")
-        let japanItem3 = Item(3000, "won", "card", "moving", "2016-08-03")
+        let japanItem1 = Item(1000, "yen", "card", "shopping")
+        let japanItem2 = Item(2000, "yen", "cash", "sleeping")
+        let japanItem3 = Item(3000, "yen", "card", "moving")
         
         
         japanTravel.items = [japanItem1,japanItem2,japanItem3]
@@ -47,17 +47,18 @@ class TravelTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return japanTravel.items.count
+        
+        return japanTravel.items!.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("TravelCell", forIndexPath: indexPath)
         
-        let items = japanTravel.items[indexPath.row]
+        let item = japanTravel.items![indexPath.row]
         
-        cell.textLabel!.text = items.category
-        cell.detailTextLabel?.text = String(items.price)
+        cell.textLabel!.text = item.ItemDate() // 현재시간
+        cell.detailTextLabel?.text = String(item.price) // 지출항목 가격
         
         return cell    }
     
