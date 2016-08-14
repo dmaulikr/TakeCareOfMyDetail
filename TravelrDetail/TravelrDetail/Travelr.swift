@@ -1,8 +1,8 @@
 //
-//  Player.swift
-//  WoodyDetail
+//  Travelr.swift
+//  TravelrDetail
 //
-//  Created by 이우재 on 2016. 8. 11..
+//  Created by 이우재 on 2016. 8. 14..
 //  Copyright © 2016년 LEE. All rights reserved.
 //
 
@@ -16,15 +16,17 @@ class Item {
     var currency : String
     var pay : String
     var category : String // 나중에 radio button 이나 아이콘선택으로 대체
-    var date = NSDate() // 현재시간 받아서 보여주기
+    var date = NSDate() // 현재시간 받기 <- 초기선택은 현재 년,월,일이고 데이트피커로 선택해 넣기
+    var numberOfPerson : Int // 피커로 인원수 받기
     var photo : UIImage?
     
-    init(_ _price:Double, _ _currency:String, _ _pay:String, _ _category:String ){
+    init(_ _price:Double, _ _currency:String, _ _pay:String, _ _category:String, _ _numberofperson:Int ){
         
         price = _price
         currency = _currency
         pay = _pay
         category = _category
+        numberOfPerson = _numberofperson
         
     }
     
@@ -130,7 +132,7 @@ class TravelWhere {
         return (card,cash,totalspend,cardremain,cashremain,totalremain)
         
     }
-
+    
 }
 
 

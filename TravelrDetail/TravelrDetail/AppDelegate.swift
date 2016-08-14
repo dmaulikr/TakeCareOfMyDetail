@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  WoodyDetail
+//  TravelrDetail
 //
-//  Created by 이우재 on 2016. 8. 11..
+//  Created by 이우재 on 2016. 8. 14..
 //  Copyright © 2016년 LEE. All rights reserved.
 //
 

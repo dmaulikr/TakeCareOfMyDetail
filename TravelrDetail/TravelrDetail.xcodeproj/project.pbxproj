@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9B66D6491D5C3632006DE57A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B66D6481D5C3632006DE57A /* AppDelegate.swift */; };
-		9B66D64B1D5C3632006DE57A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B66D64A1D5C3632006DE57A /* ViewController.swift */; };
-		9B66D64E1D5C3632006DE57A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B66D64C1D5C3632006DE57A /* Main.storyboard */; };
-		9B66D6501D5C3632006DE57A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B66D64F1D5C3632006DE57A /* Assets.xcassets */; };
-		9B66D6531D5C3632006DE57A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B66D6511D5C3632006DE57A /* LaunchScreen.storyboard */; };
-		9B66D65B1D5C38B7006DE57A /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B66D65A1D5C38B7006DE57A /* Travel.swift */; };
-		9B66D6611D5C3E70006DE57A /* TravelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B66D6601D5C3E70006DE57A /* TravelTableViewController.swift */; };
+		9BB3D8611D603B330035F34C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3D8601D603B330035F34C /* AppDelegate.swift */; };
+		9BB3D8631D603B330035F34C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3D8621D603B330035F34C /* ViewController.swift */; };
+		9BB3D8661D603B330035F34C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3D8641D603B330035F34C /* Main.storyboard */; };
+		9BB3D8681D603B330035F34C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3D8671D603B330035F34C /* Assets.xcassets */; };
+		9BB3D86B1D603B330035F34C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3D8691D603B330035F34C /* LaunchScreen.storyboard */; };
+		9BB3D8731D603B520035F34C /* TravelrTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3D8721D603B520035F34C /* TravelrTableViewController.swift */; };
+		9BB3D8751D603B610035F34C /* Travelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3D8741D603B610035F34C /* Travelr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9B66D6451D5C3632006DE57A /* WoodyDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoodyDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B66D6481D5C3632006DE57A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B66D64A1D5C3632006DE57A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9B66D64D1D5C3632006DE57A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9B66D64F1D5C3632006DE57A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9B66D6521D5C3632006DE57A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9B66D6541D5C3632006DE57A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B66D65A1D5C38B7006DE57A /* Travel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Travel.swift; sourceTree = "<group>"; };
-		9B66D6601D5C3E70006DE57A /* TravelTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelTableViewController.swift; sourceTree = "<group>"; };
+		9BB3D85D1D603B330035F34C /* TravelrDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelrDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BB3D8601D603B330035F34C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BB3D8621D603B330035F34C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BB3D8651D603B330035F34C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BB3D8671D603B330035F34C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BB3D86A1D603B330035F34C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BB3D86C1D603B330035F34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BB3D8721D603B520035F34C /* TravelrTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelrTableViewController.swift; sourceTree = "<group>"; };
+		9BB3D8741D603B610035F34C /* Travelr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Travelr.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9B66D6421D5C3632006DE57A /* Frameworks */ = {
+		9BB3D85A1D603B330035F34C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9B66D63C1D5C3632006DE57A = {
+		9BB3D8541D603B330035F34C = {
 			isa = PBXGroup;
 			children = (
-				9B66D6471D5C3632006DE57A /* WoodyDetail */,
-				9B66D6461D5C3632006DE57A /* Products */,
+				9BB3D85F1D603B330035F34C /* TravelrDetail */,
+				9BB3D85E1D603B330035F34C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9B66D6461D5C3632006DE57A /* Products */ = {
+		9BB3D85E1D603B330035F34C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B66D6451D5C3632006DE57A /* WoodyDetail.app */,
+				9BB3D85D1D603B330035F34C /* TravelrDetail.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9B66D6471D5C3632006DE57A /* WoodyDetail */ = {
+		9BB3D85F1D603B330035F34C /* TravelrDetail */ = {
 			isa = PBXGroup;
 			children = (
-				9B66D6481D5C3632006DE57A /* AppDelegate.swift */,
-				9B66D64A1D5C3632006DE57A /* ViewController.swift */,
-				9B66D64C1D5C3632006DE57A /* Main.storyboard */,
-				9B66D64F1D5C3632006DE57A /* Assets.xcassets */,
-				9B66D6511D5C3632006DE57A /* LaunchScreen.storyboard */,
-				9B66D6541D5C3632006DE57A /* Info.plist */,
-				9B66D65A1D5C38B7006DE57A /* Travel.swift */,
-				9B66D6601D5C3E70006DE57A /* TravelTableViewController.swift */,
+				9BB3D8601D603B330035F34C /* AppDelegate.swift */,
+				9BB3D8621D603B330035F34C /* ViewController.swift */,
+				9BB3D8641D603B330035F34C /* Main.storyboard */,
+				9BB3D8671D603B330035F34C /* Assets.xcassets */,
+				9BB3D8691D603B330035F34C /* LaunchScreen.storyboard */,
+				9BB3D86C1D603B330035F34C /* Info.plist */,
+				9BB3D8721D603B520035F34C /* TravelrTableViewController.swift */,
+				9BB3D8741D603B610035F34C /* Travelr.swift */,
 			);
-			path = WoodyDetail;
+			path = TravelrDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9B66D6441D5C3632006DE57A /* WoodyDetail */ = {
+		9BB3D85C1D603B330035F34C /* TravelrDetail */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B66D6571D5C3632006DE57A /* Build configuration list for PBXNativeTarget "WoodyDetail" */;
+			buildConfigurationList = 9BB3D86F1D603B330035F34C /* Build configuration list for PBXNativeTarget "TravelrDetail" */;
 			buildPhases = (
-				9B66D6411D5C3632006DE57A /* Sources */,
-				9B66D6421D5C3632006DE57A /* Frameworks */,
-				9B66D6431D5C3632006DE57A /* Resources */,
+				9BB3D8591D603B330035F34C /* Sources */,
+				9BB3D85A1D603B330035F34C /* Frameworks */,
+				9BB3D85B1D603B330035F34C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = WoodyDetail;
-			productName = WoodyDetail;
-			productReference = 9B66D6451D5C3632006DE57A /* WoodyDetail.app */;
+			name = TravelrDetail;
+			productName = TravelrDetail;
+			productReference = 9BB3D85D1D603B330035F34C /* TravelrDetail.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9B66D63D1D5C3632006DE57A /* Project object */ = {
+		9BB3D8551D603B330035F34C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = LEE;
 				TargetAttributes = {
-					9B66D6441D5C3632006DE57A = {
+					9BB3D85C1D603B330035F34C = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 9B66D6401D5C3632006DE57A /* Build configuration list for PBXProject "WoodyDetail" */;
+			buildConfigurationList = 9BB3D8581D603B330035F34C /* Build configuration list for PBXProject "TravelrDetail" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -113,56 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 9B66D63C1D5C3632006DE57A;
-			productRefGroup = 9B66D6461D5C3632006DE57A /* Products */;
+			mainGroup = 9BB3D8541D603B330035F34C;
+			productRefGroup = 9BB3D85E1D603B330035F34C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9B66D6441D5C3632006DE57A /* WoodyDetail */,
+				9BB3D85C1D603B330035F34C /* TravelrDetail */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9B66D6431D5C3632006DE57A /* Resources */ = {
+		9BB3D85B1D603B330035F34C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B66D6531D5C3632006DE57A /* LaunchScreen.storyboard in Resources */,
-				9B66D6501D5C3632006DE57A /* Assets.xcassets in Resources */,
-				9B66D64E1D5C3632006DE57A /* Main.storyboard in Resources */,
+				9BB3D86B1D603B330035F34C /* LaunchScreen.storyboard in Resources */,
+				9BB3D8681D603B330035F34C /* Assets.xcassets in Resources */,
+				9BB3D8661D603B330035F34C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9B66D6411D5C3632006DE57A /* Sources */ = {
+		9BB3D8591D603B330035F34C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B66D64B1D5C3632006DE57A /* ViewController.swift in Sources */,
-				9B66D65B1D5C38B7006DE57A /* Travel.swift in Sources */,
-				9B66D6491D5C3632006DE57A /* AppDelegate.swift in Sources */,
-				9B66D6611D5C3E70006DE57A /* TravelTableViewController.swift in Sources */,
+				9BB3D8751D603B610035F34C /* Travelr.swift in Sources */,
+				9BB3D8731D603B520035F34C /* TravelrTableViewController.swift in Sources */,
+				9BB3D8631D603B330035F34C /* ViewController.swift in Sources */,
+				9BB3D8611D603B330035F34C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9B66D64C1D5C3632006DE57A /* Main.storyboard */ = {
+		9BB3D8641D603B330035F34C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9B66D64D1D5C3632006DE57A /* Base */,
+				9BB3D8651D603B330035F34C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		9B66D6511D5C3632006DE57A /* LaunchScreen.storyboard */ = {
+		9BB3D8691D603B330035F34C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9B66D6521D5C3632006DE57A /* Base */,
+				9BB3D86A1D603B330035F34C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		9B66D6551D5C3632006DE57A /* Debug */ = {
+		9BB3D86D1D603B330035F34C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,7 +216,7 @@
 			};
 			name = Debug;
 		};
-		9B66D6561D5C3632006DE57A /* Release */ = {
+		9BB3D86E1D603B330035F34C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -255,24 +255,24 @@
 			};
 			name = Release;
 		};
-		9B66D6581D5C3632006DE57A /* Debug */ = {
+		9BB3D8701D603B330035F34C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WoodyDetail/Info.plist;
+				INFOPLIST_FILE = TravelrDetail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = KUiOS.WoodyDetail;
+				PRODUCT_BUNDLE_IDENTIFIER = KUiOS.TravelrDetail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		9B66D6591D5C3632006DE57A /* Release */ = {
+		9BB3D8711D603B330035F34C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = WoodyDetail/Info.plist;
+				INFOPLIST_FILE = TravelrDetail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = KUiOS.WoodyDetail;
+				PRODUCT_BUNDLE_IDENTIFIER = KUiOS.TravelrDetail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -280,25 +280,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B66D6401D5C3632006DE57A /* Build configuration list for PBXProject "WoodyDetail" */ = {
+		9BB3D8581D603B330035F34C /* Build configuration list for PBXProject "TravelrDetail" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B66D6551D5C3632006DE57A /* Debug */,
-				9B66D6561D5C3632006DE57A /* Release */,
+				9BB3D86D1D603B330035F34C /* Debug */,
+				9BB3D86E1D603B330035F34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B66D6571D5C3632006DE57A /* Build configuration list for PBXNativeTarget "WoodyDetail" */ = {
+		9BB3D86F1D603B330035F34C /* Build configuration list for PBXNativeTarget "TravelrDetail" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B66D6581D5C3632006DE57A /* Debug */,
-				9B66D6591D5C3632006DE57A /* Release */,
+				9BB3D8701D603B330035F34C /* Debug */,
+				9BB3D8711D603B330035F34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9B66D63D1D5C3632006DE57A /* Project object */;
+	rootObject = 9BB3D8551D603B330035F34C /* Project object */;
 }

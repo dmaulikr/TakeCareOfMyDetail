@@ -1,15 +1,14 @@
 //
-//  TravelTableViewController.swift
-//  WoodyDetail
+//  TravelrTableViewController.swift
+//  TravelrDetail
 //
-//  Created by 이우재 on 2016. 8. 11..
+//  Created by 이우재 on 2016. 8. 14..
 //  Copyright © 2016년 LEE. All rights reserved.
 //
 
 import UIKit
 
-class TravelTableViewController: UITableViewController {
-    
+class TravelrTableViewController: UITableViewController {
     
     var japanTravel:TravelWhere = TravelWhere("Japan", "2016.08.20-08.25" , Budget(3000,4000,"yen"))
 
@@ -23,15 +22,13 @@ class TravelTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let japanItem1 = Item(1000, "yen", "card", "shopping")
-        let japanItem2 = Item(2000, "yen", "cash", "sleeping")
-        let japanItem3 = Item(3000, "yen", "card", "moving")
+        let japanItem1 = Item(1000, "yen", "card", "shopping", 1)
+        let japanItem2 = Item(2000, "yen", "cash", "sleeping", 1)
+        let japanItem3 = Item(3000, "yen", "card", "moving", 3)
         
         
         japanTravel.items = [japanItem1,japanItem2,japanItem3]
-        
     }
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -47,20 +44,20 @@ class TravelTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        
         return japanTravel.items!.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("TravelCell", forIndexPath: indexPath)
-        
+        let cell = tableView.dequeueReusableCellWithIdentifier("TravelrCell", forIndexPath: indexPath)
+
         let item = japanTravel.items![indexPath.row]
         
         cell.textLabel!.text = item.ItemDate() // 현재시간
         cell.detailTextLabel?.text = String(item.price) // 지출항목 가격
-        
-        return cell    }
+
+        return cell
+    }
     
 
     /*
