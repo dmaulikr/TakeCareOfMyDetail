@@ -58,8 +58,8 @@ class TravelrTableViewController: UITableViewController {
 
         let item = japanTravel.items![indexPath.row]
         
-        cell.textLabel!.text = item.currency.symbol
-        cell.detailTextLabel?.text = String(item.price)
+        cell.textLabel!.text = item.pay
+        cell.detailTextLabel?.text = item.currency.symbol + " " + String(item.price)
 
         return cell
     }

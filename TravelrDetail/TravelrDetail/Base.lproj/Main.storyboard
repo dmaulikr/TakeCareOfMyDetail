@@ -1,52 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="t1J-gx-9EC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XIC-65-qb8">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="3jd-TA-8ch">
+        <!--일본여행-->
+        <scene sceneID="OLV-kJ-DVY">
             <objects>
-                <navigationController toolbarHidden="NO" id="t1J-gx-9EC" sceneMemberID="viewController">
+                <tabBarController id="aKa-a2-zIy" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="일본여행" id="rrN-pH-ah5"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BEW-d6-lUJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="qIh-xo-46E">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
                     <connections>
-                        <segue destination="Hfg-7d-noy" kind="relationship" relationship="rootViewController" id="axL-wD-brS"/>
+                        <segue destination="uoy-uA-9l1" kind="relationship" relationship="viewControllers" id="ENk-NX-FAr"/>
+                        <segue destination="mA4-g0-yGv" kind="relationship" relationship="viewControllers" id="kak-Fq-Juh"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wWD-0j-cLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JKu-eQ-tlS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-788" y="16"/>
+            <point key="canvasLocation" x="-1507" y="-882"/>
         </scene>
-        <!--미국여행-->
-        <scene sceneID="51q-Nj-0l7">
+        <!--내역-->
+        <scene sceneID="krQ-DB-154">
             <objects>
-                <tableViewController id="Hfg-7d-noy" customClass="TravelrTableViewController" customModule="TravelrDetail" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="147" sectionHeaderHeight="28" sectionFooterHeight="28" id="tVL-aO-u9K">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                <tableViewController id="uoy-uA-9l1" customClass="TravelrTableViewController" customModule="TravelrDetail" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="114" sectionHeaderHeight="28" sectionFooterHeight="28" id="KAj-0K-WrW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TravelrCell" textLabel="23J-83-dM8" detailTextLabel="ttd-f6-Ak0" rowHeight="147" style="IBUITableViewCellStyleValue1" id="Y4H-Ks-ypS">
-                                <rect key="frame" x="0.0" y="92" width="375" height="147"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TravelrCell" textLabel="O8k-le-VrT" detailTextLabel="9oo-pX-Vr2" rowHeight="114" style="IBUITableViewCellStyleValue1" id="3Ih-6E-3Cc">
+                                <rect key="frame" x="0.0" y="92" width="375" height="114"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y4H-Ks-ypS" id="Cfg-Gc-shW">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="146"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Ih-6E-3Cc" id="mUu-0D-C77">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="23J-83-dM8">
-                                            <rect key="frame" x="15" y="63" width="42" height="20"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="O8k-le-VrT">
+                                            <rect key="frame" x="15" y="47" width="32" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ttd-f6-Ak0">
-                                            <rect key="frame" x="328" y="63" width="32" height="20"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9oo-pX-Vr2">
+                                            <rect key="frame" x="318" y="47" width="42" height="20"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
@@ -57,19 +60,101 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="Hfg-7d-noy" id="d1Z-Lv-EV3"/>
-                            <outlet property="delegate" destination="Hfg-7d-noy" id="aCi-Gc-Zcr"/>
+                            <outlet property="dataSource" destination="uoy-uA-9l1" id="LAi-Ak-aFE"/>
+                            <outlet property="delegate" destination="uoy-uA-9l1" id="pxa-Ha-FUH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="미국여행" id="ffu-rq-nsj"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="travlrListView" destination="tVL-aO-u9K" id="A97-Ql-Zqd"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="내역" id="qAT-li-baD"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6Jg-yo-CMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zdL-wE-gca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-355.5" y="15.5"/>
+            <point key="canvasLocation" x="-1021.5" y="-1169.5"/>
+        </scene>
+        <!--통계-->
+        <scene sceneID="s9P-lX-nFK">
+            <objects>
+                <viewController id="mA4-g0-yGv" customClass="TravelrViewController" customModule="TravelrDetail" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Tl-QC-kvP"/>
+                        <viewControllerLayoutGuide type="bottom" id="uJA-vh-wId"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HRc-pX-FpQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="카드 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfC-op-rS8">
+                                <rect key="frame" x="54" y="204" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaY-8T-MI2">
+                                <rect key="frame" x="164" y="336" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="현금 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIV-rj-P6N">
+                                <rect key="frame" x="54" y="336" width="39" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFT-4x-6QH">
+                                <rect key="frame" x="164" y="372" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="총 쓴돈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjY-Mu-1Ec">
+                                <rect key="frame" x="151" y="72" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IiL-7p-UXP">
+                                <rect key="frame" x="164" y="249" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWn-e1-t2d">
+                                <rect key="frame" x="164" y="204" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="통계" id="AdY-Ab-RTG"/>
+                    <connections>
+                        <outlet property="cardWonSpend" destination="kWn-e1-t2d" id="XxT-hh-7lG"/>
+                        <outlet property="cardYenSpend" destination="IiL-7p-UXP" id="MvG-sJ-wCX"/>
+                        <outlet property="cashWonSpend" destination="YaY-8T-MI2" id="pwp-ic-LXO"/>
+                        <outlet property="cashYenSpend" destination="vFT-4x-6QH" id="jus-d0-yxA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ey8-6V-ifi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1021.5" y="-445.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XYk-Pz-Epd">
+            <objects>
+                <navigationController id="XIC-65-qb8" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YhQ-Ns-1s4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="aKa-a2-zIy" kind="relationship" relationship="rootViewController" id="0sd-o6-ayz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t1o-nB-hkl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1945.5" y="-882.5"/>
         </scene>
     </scenes>
 </document>
