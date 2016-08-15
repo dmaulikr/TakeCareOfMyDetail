@@ -8,10 +8,15 @@
 
 import UIKit
 
+let KRWCurrency = Currency(rawValue:0)
+let JPYCurrency = Currency(rawValue:2)
+
+// 제목: Japan, peirod: 2016.08.20-08.25, 카드예산:원화300000, 현금예산1:엔화100000/원화300000
+var japanTravel:TravelWhere = TravelWhere("Japan", "2016.08.20-08.25" ,Budget("card",300000,Currency(rawValue:0)!), [Budget("cash",100000,Currency(rawValue:2)!), Budget("cash",300000,Currency(rawValue: 0)!)])
+
 class TravelrTableViewController: UITableViewController {
     
-    var japanTravel:TravelWhere = TravelWhere("Japan", "2016.08.20-08.25" , Budget(3000,4000,"yen"))
-
+    @IBOutlet var travlrListView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +27,9 @@ class TravelrTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let japanItem1 = Item(1000, "yen", "card", "shopping", 1)
-        let japanItem2 = Item(2000, "yen", "cash", "sleeping", 1)
-        let japanItem3 = Item(3000, "yen", "card", "moving", 3)
+        let japanItem1 = Item(100000, Currency(rawValue:0)!, "card", "shopping", 1) // 면세점에서 원화로 삼
+        let japanItem2 = Item(10000, Currency(rawValue:2)!, "cash", "sleeping", 3) // 방값계산
+        let japanItem3 = Item(1000, Currency(rawValue:2)!, "card", "moving", 1) // 일본 기차탐
         
         
         japanTravel.items = [japanItem1,japanItem2,japanItem3]
@@ -53,8 +58,8 @@ class TravelrTableViewController: UITableViewController {
 
         let item = japanTravel.items![indexPath.row]
         
-        cell.textLabel!.text = item.ItemDate() // 현재시간
-        cell.detailTextLabel?.text = String(item.price) // 지출항목 가격
+        cell.textLabel!.text = item.currency.symbol
+        cell.detailTextLabel?.text = String(item.price)
 
         return cell
     }
