@@ -22,8 +22,11 @@ class EventTableViewController: UITableViewController {
         
         let study = Event(name: "공부")
         let work = Event(name: "알바", start: (2016,08,11,16,00))
+        let test = Event()
+        test.name = "test event"
+        test.memo = "test memo"
         
-        events += [study, work]
+        events += [study, work, test]
     }
 
     override func didReceiveMemoryWarning() {

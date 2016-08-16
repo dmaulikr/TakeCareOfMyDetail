@@ -22,22 +22,27 @@ class StudentTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         let jeongjoo = Student(name: "이정주")
-        jeongjoo.major = "Linguistics"
+        jeongjoo.major = "언어"
         jeongjoo.grade = 2
         jeongjoo.score = 4.0
         
         let hyeongjun = Student(name: "박형준")
-        jeongjoo.major = "Linguistics"
+        hyeongjun.major = "언어"
         hyeongjun.grade = 2
         hyeongjun.score = 2.2
         
         let sohee = Student(name: "이소희")
-        sohee.major = "LCB"
+        sohee.major = "외식경영"
         sohee.grade = 2
         sohee.score = 4.1
         
+        let seongjun = Student(name: "홍성준")
+        seongjun.major = "불어불문"
+        seongjun.grade = 3
+        seongjun.score = 3.5
         
-        students += [jeongjoo, hyeongjun, sohee]
+        
+        students += [jeongjoo, hyeongjun, sohee, seongjun]
         
     }
 
@@ -65,7 +70,7 @@ class StudentTableViewController: UITableViewController {
         // Configure the cell...
         let currentStudent = students[indexPath.row]
         cell.textLabel!.text = currentStudent.name
-        cell.detailTextLabel?.text = String(currentStudent.score)
+        cell.detailTextLabel?.text = currentStudent.major + "학과 " + String(currentStudent.grade) + "학년"
         return cell
     }
     

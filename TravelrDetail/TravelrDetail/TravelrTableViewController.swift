@@ -1,39 +1,38 @@
 //
-//  PlayerTableViewController.swift
-//  seunghkongDetail
+//  TravelrTableViewController.swift
+//  TravelrDetail
 //
-//  Created by Seung Hyun Kong on 8/11/16.
-//  Copyright © 2016 Seung Hyun Kong. All rights reserved.
+//  Created by 이우재 on 2016. 8. 14..
+//  Copyright © 2016년 LEE. All rights reserved.
 //
 
 import UIKit
 
-class PlayerTableViewController: UITableViewController {
+let KRWCurrency = Currency(rawValue:0)
+let JPYCurrency = Currency(rawValue:2)
 
-    var players:Array<Player> = []
+// 제목: Japan, peirod: 2016.08.20-08.25, 카드예산:원화300000, 현금예산1:엔화100000/원화300000
+var japanTravel:TravelWhere = TravelWhere("Japan", "2016.08.20-08.25" ,Budget("card",300000,Currency(rawValue:0)!), [Budget("cash",100000,Currency(rawValue:2)!), Budget("cash",300000,Currency(rawValue: 0)!)])
+
+class TravelrTableViewController: UITableViewController {
+    
+    @IBOutlet var travlrListView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        var currentPlayer:Player? = nil
-        
-        let mino = Player(name: "강민호")
-        mino.position = 0
-        mino.average = 3.00
-        mino.description = "blah blah blah blah..."
-        
-        let jongyoon = Player(name: "박종윤")
-        jongyoon.position = 1
-        jongyoon.average = 2.99
-        
-        players += [mino, jongyoon]
+        let japanItem1 = Item(100000, Currency(rawValue:0)!, "card", "shopping", 1) // 면세점에서 원화로 삼
+        let japanItem2 = Item(10000, Currency(rawValue:2)!, "cash", "sleeping", 3) // 방값계산
+        let japanItem3 = Item(1000, Currency(rawValue:2)!, "card", "moving", 1) // 일본 기차탐
         
         
+        japanTravel.items = [japanItem1,japanItem2,japanItem3]
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,18 +49,18 @@ class PlayerTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return players.count
+        return japanTravel.items!.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("TravelrCell", forIndexPath: indexPath)
 
-        // Configure the cell...
-        let currentPlayer = players[indexPath.row]
-        cell.textLabel!.text = currentPlayer.name
-        cell.detailTextLabel?.text = String(currentPlayer.average)
+        let item = japanTravel.items![indexPath.row]
         
+        cell.textLabel!.text = item.pay
+        cell.detailTextLabel?.text = item.currency.symbol + " " + String(item.price)
+
         return cell
     }
     
@@ -101,21 +100,14 @@ class PlayerTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let destVC = segue.destinationViewController as!
-        let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
-        let selected:Player = self.Player((selectedIndex.row)
-        
-        destVC.current
     }
- 
-
-    
+    */
 
 }

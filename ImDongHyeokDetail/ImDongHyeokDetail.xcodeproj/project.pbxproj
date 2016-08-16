@@ -12,6 +12,8 @@
 		E53275E41D5C363400ED2EA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53275E21D5C363400ED2EA8 /* Main.storyboard */; };
 		E53275E61D5C363400ED2EA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53275E51D5C363400ED2EA8 /* Assets.xcassets */; };
 		E53275E91D5C363400ED2EA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53275E71D5C363400ED2EA8 /* LaunchScreen.storyboard */; };
+		E53275F11D5C383000ED2EA8 /* Plan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53275F01D5C383000ED2EA8 /* Plan.swift */; };
+		E53275F51D5C43B500ED2EA8 /* PlanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53275F41D5C43B500ED2EA8 /* PlanTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E53275E51D5C363400ED2EA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E53275E81D5C363400ED2EA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E53275EA1D5C363400ED2EA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E53275F01D5C383000ED2EA8 /* Plan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plan.swift; sourceTree = "<group>"; };
+		E53275F41D5C43B500ED2EA8 /* PlanTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				E53275E51D5C363400ED2EA8 /* Assets.xcassets */,
 				E53275E71D5C363400ED2EA8 /* LaunchScreen.storyboard */,
 				E53275EA1D5C363400ED2EA8 /* Info.plist */,
+				E53275F01D5C383000ED2EA8 /* Plan.swift */,
+				E53275F41D5C43B500ED2EA8 /* PlanTableViewController.swift */,
 			);
 			path = ImDongHyeokDetail;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			files = (
 				E53275E11D5C363400ED2EA8 /* ViewController.swift in Sources */,
 				E53275DF1D5C363400ED2EA8 /* AppDelegate.swift in Sources */,
+				E53275F51D5C43B500ED2EA8 /* PlanTableViewController.swift in Sources */,
+				E53275F11D5C383000ED2EA8 /* Plan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +294,7 @@
 				E53275EF1D5C363400ED2EA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -25,9 +25,8 @@ class ahsibTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let korea = SeoulTrip()
-        korea.name = "고려대"
-        korea.info = "안암에 있는 고려대입니다. "
+        let korea = SeoulTrip(name: "고려대")
+        korea.info = "안암에 있는 고려대입니다. 9월에는 고연전이 있죠! "
         korea.subway = 3
         
         let hongdae = SeoulTrip()
@@ -37,17 +36,22 @@ class ahsibTableViewController: UITableViewController {
         
         let sinchon = SeoulTrip()
         sinchon.name = "신촌"
-        sinchon.info = "대학가들이 많은신촌입니다."
+        sinchon.info = "대학가들이 많은 신촌입니다. 백화점과 각종 맛집들이 있습니다."
         sinchon.subway = 2
         
         let bucchon = SeoulTrip()
         bucchon.name = "북촌"
         bucchon.info = "북촌입니다. 이쁜 한옥이 많고 외국인들을 상대로하는 가게들이 많습니다."
         bucchon.subway = 2
+        
+        let hanriver = SeoulTrip()
+        hanriver.name = "한강"
+        hanriver.info = "한강입니다. 수상레저를 즐기는 사람이 많습니다. 유람선도 있죠!"
+        hanriver.subway = 2
 
         
         
-        trip += [korea,hongdae,sinchon,bucchon]
+        trip += [korea,hongdae,sinchon,bucchon,hanriver]
         
     }
 

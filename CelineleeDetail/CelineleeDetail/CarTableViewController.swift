@@ -1,37 +1,34 @@
 //
-//  PlayerTableViewController.swift
-//  seunghkongDetail
+//  CarTableViewController.swift
+//  CelineleeDetail
 //
-//  Created by Seung Hyun Kong on 8/11/16.
-//  Copyright © 2016 Seung Hyun Kong. All rights reserved.
+//  Created by cscoi016 on 2016. 8. 11..
+//  Copyright © 2016년 ryung. All rights reserved.
 //
 
 import UIKit
 
-class PlayerTableViewController: UITableViewController {
+class CarTableViewController: UITableViewController {
+    
+    var cars:[Car] = []
 
-    var players:Array<Player> = []
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        var currentPlayer:Player? = nil
+        let mycarA = Car(model:"C",brand:"benz",country:"germany")
+        mycarA.cost = 0.7
         
-        let mino = Player(name: "강민호")
-        mino.position = 0
-        mino.average = 3.00
-        mino.description = "blah blah blah blah..."
+        let mycarB = Car(model:"R8",brand:"Audi",country:"germany")
+        mycarB.cost = 2.1
         
-        let jongyoon = Player(name: "박종윤")
-        jongyoon.position = 1
-        jongyoon.average = 2.99
         
-        players += [mino, jongyoon]
+        cars += [mycarA,mycarB]
         
         
     }
@@ -50,18 +47,18 @@ class PlayerTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return players.count
+        return cars.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("CarCell", forIndexPath: indexPath)
 
-        // Configure the cell...
-        let currentPlayer = players[indexPath.row]
-        cell.textLabel!.text = currentPlayer.name
-        cell.detailTextLabel?.text = String(currentPlayer.average)
-        
+        //configure the cell...
+            let currentCar = cars[indexPath.row]
+        cell.textLabel!.text = currentCar.model
+        cell.detailTextLabel?.text = String(currentCar.cost)
+
         return cell
     }
     
@@ -101,21 +98,14 @@ class PlayerTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let destVC = segue.destinationViewController as!
-        let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
-        let selected:Player = self.Player((selectedIndex.row)
-        
-        destVC.current
     }
- 
-
-    
+    */
 
 }

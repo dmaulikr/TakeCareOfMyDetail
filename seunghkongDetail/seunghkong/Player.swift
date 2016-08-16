@@ -12,17 +12,12 @@ class Player {
     let name:String
     var position:Int
     var average:Double
+    var description:String
     
     init(name:String) {
         self.name = name
         self.position = 0
         self.average = 0.0
+        self.description = ""
     }
 }
-
-/*
-    func init(name:String){
-        self.name = name
-    }
-}
- */
