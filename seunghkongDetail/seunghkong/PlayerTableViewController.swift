@@ -108,9 +108,9 @@ class PlayerTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        let destVC = segue.destinationViewController as!
+        let destVC = segue.destinationViewController as! ViewController
         let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
-        let selected:Player = self.Player(selectedIndex.row)
+        let selected:Player = self.player(selectedIndex.row)
         
         destVC.currentPlayer = selected
     }
