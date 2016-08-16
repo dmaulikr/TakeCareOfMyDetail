@@ -8,11 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HitterDetailViewController: UIViewController {
 
+    @IBOutlet weak var hitterNameLabel: UILabel!
+    
+    @IBOutlet weak var hitterAverageLabel: UILabel!
+    
+    var currentHitter:Hitter? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        hitterNameLabel.text = currentHitter?.name
+        hitterAverageLabel.text = String(currentHitter?.average)
     }
 
     override func didReceiveMemoryWarning() {

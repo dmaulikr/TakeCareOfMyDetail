@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C2773361D62A430006784D1 /* HitterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2773351D62A430006784D1 /* HitterTableViewController.swift */; };
 		2CF9F83A1D5C362B001767AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9F8391D5C362B001767AC /* AppDelegate.swift */; };
 		2CF9F83C1D5C362B001767AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9F83B1D5C362B001767AC /* ViewController.swift */; };
 		2CF9F83F1D5C362B001767AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF9F83D1D5C362B001767AC /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C2773351D62A430006784D1 /* HitterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitterTableViewController.swift; sourceTree = "<group>"; };
 		2CF9F8361D5C362B001767AC /* LingostarDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LingostarDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF9F8391D5C362B001767AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CF9F83B1D5C362B001767AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				2CF9F8391D5C362B001767AC /* AppDelegate.swift */,
 				2CF9F83B1D5C362B001767AC /* ViewController.swift */,
 				2CF9F83D1D5C362B001767AC /* Main.storyboard */,
+				2C2773351D62A430006784D1 /* HitterTableViewController.swift */,
 				2CF9F8401D5C362B001767AC /* Assets.xcassets */,
 				2CF9F8421D5C362B001767AC /* LaunchScreen.storyboard */,
 				2CF9F8451D5C362B001767AC /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CF9F83C1D5C362B001767AC /* ViewController.swift in Sources */,
+				2C2773361D62A430006784D1 /* HitterTableViewController.swift in Sources */,
 				2CF9F83A1D5C362B001767AC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
