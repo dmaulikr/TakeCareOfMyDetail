@@ -14,6 +14,8 @@
 		DA6AE3EE1D5C36260001352D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6AE3EC1D5C36260001352D /* LaunchScreen.storyboard */; };
 		DA6AE3F91D5C36260001352D /* LunaticaugDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE3F81D5C36260001352D /* LunaticaugDetailTests.swift */; };
 		DA6AE4041D5C36260001352D /* LunaticaugDetailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE4031D5C36260001352D /* LunaticaugDetailUITests.swift */; };
+		DA6AE4181D5C39830001352D /* FallSemester.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE4171D5C39830001352D /* FallSemester.swift */; };
+		DA6AE41C1D5C43ED0001352D /* FallSemesterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6AE41B1D5C43ED0001352D /* FallSemesterTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		DA6AE3FF1D5C36260001352D /* LunaticaugDetailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LunaticaugDetailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6AE4031D5C36260001352D /* LunaticaugDetailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunaticaugDetailUITests.swift; sourceTree = "<group>"; };
 		DA6AE4051D5C36260001352D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA6AE4171D5C39830001352D /* FallSemester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FallSemester.swift; path = ../FallSemester.swift; sourceTree = "<group>"; };
+		DA6AE41B1D5C43ED0001352D /* FallSemesterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FallSemesterTableViewController.swift; path = ../FallSemesterTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		DA6AE3E21D5C36260001352D /* LunaticaugDetail */ = {
 			isa = PBXGroup;
 			children = (
+				DA6AE4171D5C39830001352D /* FallSemester.swift */,
+				DA6AE41B1D5C43ED0001352D /* FallSemesterTableViewController.swift */,
 				DA6AE3E31D5C36260001352D /* AppDelegate.swift */,
 				DA6AE3E51D5C36260001352D /* ViewController.swift */,
 				DA6AE3E71D5C36260001352D /* Main.storyboard */,
@@ -261,6 +267,8 @@
 			files = (
 				DA6AE3E61D5C36260001352D /* ViewController.swift in Sources */,
 				DA6AE3E41D5C36260001352D /* AppDelegate.swift in Sources */,
+				DA6AE41C1D5C43ED0001352D /* FallSemesterTableViewController.swift in Sources */,
+				DA6AE4181D5C39830001352D /* FallSemester.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +495,7 @@
 				DA6AE40A1D5C36260001352D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA6AE40B1D5C36260001352D /* Build configuration list for PBXNativeTarget "LunaticaugDetailTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +504,7 @@
 				DA6AE40D1D5C36260001352D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA6AE40E1D5C36260001352D /* Build configuration list for PBXNativeTarget "LunaticaugDetailUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +513,7 @@
 				DA6AE4101D5C36260001352D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
