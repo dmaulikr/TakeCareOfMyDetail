@@ -1,35 +1,28 @@
 //
-//  CarTableViewController.swift
-//  CelineleeDetail
+//  MusicTableViewController.swift
+//  ChangukangDetail
 //
-//  Created by cscoi016 on 2016. 8. 11..
-//  Copyright © 2016년 ryung. All rights reserved.
+//  Created by kang on 2016. 8. 11..
+//  Copyright © 2016년 iOS_Learn. All rights reserved.
 //
 
 import UIKit
 
-class CarTableViewController: UITableViewController {
-    
-    var cars:[Car] = []
 
+class MusicTableViewController: UITableViewController {
+    
+    
+    
+    
+    var musics:[Music] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let mycarA = Car(model:"C",brand:"benz",country:"germany")
-        mycarA.cost = 0.7
-        
-        let mycarB = Car(model:"R8",brand:"Audi",country:"germany")
-        mycarB.cost = 2.1
+        let IU = Music(singer:"아이유", genre:"ballad", rank:1)
+        let Skrillex = Music(singer:"스크릴렉스" ,genre:"edm",rank:2)
         
         
-        cars += [mycarA,mycarB]
-        
+        musics += [IU, Skrillex]
         
     }
 
@@ -42,23 +35,23 @@ class CarTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return cars.count
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return cars.count
+        return musics.count
     }
 
-    
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("CarCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("MusicCell", forIndexPath: indexPath)
 
-        //configure the cell...
-        let currentCar = cars[indexPath.row]
-        cell.textLabel!.text = currentCar.model
-        cell.detailTextLabel?.text = String(currentCar.cost)
-
+        
+        let currentSingner = musics[indexPath.row]
+        cell.textLabel?.text = currentSingner.singer
+        cell.detailTextLabel?.text = "\(currentSingner.genre)"
+        
         return cell
     }
     
@@ -98,22 +91,14 @@ class CarTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        let destVC = segue.destinationViewController as! CarDetailViewController
-        
-        
-        let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
-        let selected:Car = self.cars[selectedIndex.row]
-        destVC.currentCar = selected
-        //let selected:
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    
+    */
 
 }

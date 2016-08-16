@@ -8,10 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class CarDetailViewController: UIViewController {
+    
+    
+    
+    @IBOutlet weak var CarNameLabel: UILabel!
+    @IBOutlet weak var CarCostLabel: UILabel!
+    
+    var currentCar: Car? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let theCar = currentCar {
+            CarNameLabel.text = theCar.model
+            CarCostLabel.text = String(theCar.cost)
+        }
+        
+        
+       
         // Do any additional setup after loading the view, typically from a nib.
     }
 
