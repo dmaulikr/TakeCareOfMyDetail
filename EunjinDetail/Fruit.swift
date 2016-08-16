@@ -12,10 +12,14 @@ class Fruit{
     var name:String
     var price:Int
     var color:String
+    var country:String
+    var season:String
     
-    init(name:String,price:Int,color:String){
+    init(name:String,price:Int,color:String,country:String,season:String){
         self.name = name
         self.price = price
         self.color = color
+        self.country = country
+        self.season = season
     }
 }
