@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< Updated upstream
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qpZ-rZ-Cn6">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5AV-ig-yV6">
+>>>>>>> Stashed changes
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -15,7 +19,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventCell" textLabel="Hp6-pA-6X4" detailTextLabel="sNw-Ej-Vsa" style="IBUITableViewCellStyleValue1" id="INn-kc-ec3">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="INn-kc-ec3" id="aaj-gr-r1g">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -37,6 +41,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="266-Ws-LrQ" kind="show" id="xh1-fg-V8i"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -45,15 +52,16 @@
                             <outlet property="delegate" destination="qpZ-rZ-Cn6" id="ZxB-b0-9sg"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="vnY-Oo-dqV"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVN-sg-HFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="405"/>
+            <point key="canvasLocation" x="950" y="400"/>
         </scene>
-        <!--Event View Controller-->
+        <!--Event Detail View Controller-->
         <scene sceneID="n6X-gy-pHr">
             <objects>
-                <viewController id="266-Ws-LrQ" customClass="EventViewController" customModule="norary3Detail" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="266-Ws-LrQ" customClass="EventDetailViewController" customModule="norary3Detail" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ila-wz-kWy"/>
                         <viewControllerLayoutGuide type="bottom" id="vP0-Xk-NyJ"/>
@@ -62,14 +70,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmw-TX-Umf">
-                                <rect key="frame" x="149" y="81" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1a3-Wo-u5l">
+                                <rect key="frame" x="20" y="81" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1a3-Wo-u5l">
-                                <rect key="frame" x="20" y="81" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmw-TX-Umf">
+                                <rect key="frame" x="179" y="81" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -78,13 +86,31 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="EventDetailLable" destination="nmw-TX-Umf" id="eSJ-6A-ZkU"/>
-                        <outlet property="EventNameLable" destination="1a3-Wo-u5l" id="VAK-7q-r57"/>
+                        <outlet property="EventDetail" destination="nmw-TX-Umf" id="8qF-zG-OL5"/>
+                        <outlet property="EventName" destination="1a3-Wo-u5l" id="Obf-19-ylp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jlv-Ib-ESQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="769" y="405"/>
+            <point key="canvasLocation" x="1756" y="405"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ic2-J4-k4n">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5AV-ig-yV6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q0C-V1-skN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qpZ-rZ-Cn6" kind="relationship" relationship="rootViewController" id="Dfv-sh-PP6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="47Y-1S-tkH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="400"/>
         </scene>
     </scenes>
 </document>

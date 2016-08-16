@@ -58,8 +58,8 @@ class EventTableViewController: UITableViewController {
 
         return cell
     }
+  
     
-
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -95,14 +95,21 @@ class EventTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        let destVC = segue.destinationViewController as! EventDetailViewController
+        let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
+        let selected:Event = self.events[selectedIndex.row]
+        
+        destVC.currentEvent = selected
+
     }
-    */
+    
 
 }
