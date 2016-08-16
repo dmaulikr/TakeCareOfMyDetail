@@ -110,9 +110,9 @@ class PlayerTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         let destVC = segue.destinationViewController as!
         let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
-        let selected:Player = self.Player((selectedIndex.row)
+        let selected:Player = self.Player(selectedIndex.row)
         
-        destVC.current
+        destVC.currentPlayer = selected
     }
  
 
