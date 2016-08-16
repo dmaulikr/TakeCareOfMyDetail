@@ -14,6 +14,7 @@
 		1CCFB7FC1D5C376700D0FA8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CCFB7FA1D5C376700D0FA8A /* LaunchScreen.storyboard */; };
 		1CCFB8101D5C419000D0FA8A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCFB80F1D5C419000D0FA8A /* Event.swift */; };
 		1CCFB8121D5C426500D0FA8A /* EventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCFB8111D5C426500D0FA8A /* EventTableViewController.swift */; };
+		1CF528011D62A700006821E4 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF528001D62A700006821E4 /* EventViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1CCFB7FD1D5C376700D0FA8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CCFB80F1D5C419000D0FA8A /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		1CCFB8111D5C426500D0FA8A /* EventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewController.swift; sourceTree = "<group>"; };
+		1CF528001D62A700006821E4 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				1CCFB7F31D5C376700D0FA8A /* ViewController.swift */,
 				1CCFB7F51D5C376700D0FA8A /* Main.storyboard */,
 				1CCFB8111D5C426500D0FA8A /* EventTableViewController.swift */,
+				1CF528001D62A700006821E4 /* EventViewController.swift */,
 				1CCFB80F1D5C419000D0FA8A /* Event.swift */,
 				1CCFB7F81D5C376700D0FA8A /* Assets.xcassets */,
 				1CCFB7FA1D5C376700D0FA8A /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CF528011D62A700006821E4 /* EventViewController.swift in Sources */,
 				1CCFB7F41D5C376700D0FA8A /* ViewController.swift in Sources */,
 				1CCFB8101D5C419000D0FA8A /* Event.swift in Sources */,
 				1CCFB8121D5C426500D0FA8A /* EventTableViewController.swift in Sources */,
