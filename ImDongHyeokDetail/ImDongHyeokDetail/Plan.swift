@@ -16,6 +16,7 @@ class Plan {
     var end:Time
     
     
+    
     init(){
         self.name = ""
         self.achieve = 0
@@ -27,5 +28,6 @@ class Plan {
         self.init()
         self.name = name
     }
+    
 }
 

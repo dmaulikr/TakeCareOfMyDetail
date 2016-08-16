@@ -63,6 +63,20 @@ class PlanTableViewController: UITableViewController {
     }
     
 
-
+//제일 아래쪽prepareforSEgue
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        //목적지 뷰 컨트롤러 확보
+        let destVC = segue.destinationViewController as! PlanDetailViewController//세그웨이는 목적지 뷰 컨트롤러가 어딘지 알고있다
+        
+        //테이블 뷰에서 선택된 오브젝트 확보
+        let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
+        let selected:Plan = self.Plans[selectedIndex.row]
+        
+        //목적지 뷰 컨트롤러에 선택된 오브젝트 전달
+        //받을수있는 준비 시키기
+        destVC.currentPlan = selected
+        
+    }
 
 }
