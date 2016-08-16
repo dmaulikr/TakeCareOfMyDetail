@@ -20,6 +20,8 @@ class PlayerTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
+        var currentPlayer:Player? = nil
+        
         let mino = Player(name: "강민호")
         mino.position = 0
         mino.average = 3.00
@@ -99,14 +101,21 @@ class PlayerTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        let destVC = segue.destinationViewController as!
+        let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
+        let selected:Player = self.Player((selectedIndex.row)
+        
+        destVC.current
     }
-    */
+ 
+
+    
 
 }

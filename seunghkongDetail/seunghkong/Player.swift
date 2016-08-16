@@ -21,10 +21,3 @@ class Player {
         self.description = ""
     }
 }
-
-/*
-    func init(name:String){
-        self.name = name
-    }
-}
- */
