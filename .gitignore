@@ -65,3 +65,13 @@ fastlane/screenshots
 fastlane/test_output
 
 LingostarDetail/LingostarDetail/Base.lproj/._Main.storyboard
+
+LingostarDetail/LingostarDetail/Assets.xcassets/AppIcon.appiconset/Contents.json
+
+LingostarDetail/LingostarDetail/Assets.xcassets/AppIcon.appiconset/Contents.json
+
+LingostarDetail/LingostarDetail/Base.lproj/Main.storyboard
+
+seunghkongDetail/seunghkong/Base.lproj/Main.storyboard
+
+*.storyboard
