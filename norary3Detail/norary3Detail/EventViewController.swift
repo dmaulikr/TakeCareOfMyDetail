@@ -10,6 +10,10 @@ import UIKit
 
 class EventViewController: UIViewController {
 
+    @IBOutlet weak var EventNameLable: UILabel!
+    
+    @IBOutlet weak var EventDetailLable: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,14 +26,15 @@ class EventViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+
     }
-    */
+    
 
 }
