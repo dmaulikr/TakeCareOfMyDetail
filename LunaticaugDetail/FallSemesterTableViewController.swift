@@ -16,7 +16,7 @@ class FallSemesterTableViewController: UITableViewController {
         
         let iMEN216 = FallClass(classID : "IMEN216",className :"OR-I 및 실습", classpoint : 3, professor :"최인찬", classType : .Essential )
         
-        
+        let iMEN212 = FallClass(classID : "IMEN212",className :"자ㅛ구조 및 알고리즘", classpoint : 3, professor :"최인찬", classType : .Essential )
         
         
         
