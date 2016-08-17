@@ -105,15 +105,18 @@ class PlayerTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        // 목적지 뷰 컨트롤러 확보
-        let destVC = segue.destinationViewController as! PlayerDetailViewController
+        // 목적지 뷰 컨트롤러 확보 + 테이블 뷰에서 선택된 오브젝트 확보
+        if let destVC = segue.destinationViewController as? PlayerDetailViewController, let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow {
         
-        // 테이블 뷰에서 선택된 오브젝트 확보
-        let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
-        let selected:Fruit = self.fruitlist[selectedIndex.row]
+                let selected:Fruit = self.fruitlist[selectedIndex.row]
+                
+                // 목적지 뷰 컨트롤러에 선택된 오브젝트 전달
+                destVC.currentFruit = selected
+            
+            
+        }
         
-        // 목적지 뷰 컨트롤러에 선택된 오브젝트 전달
-        destVC.currentFruit = selected
+        
         
     }
 
