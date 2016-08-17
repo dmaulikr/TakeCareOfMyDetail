@@ -11,10 +11,12 @@ import UIKit
 class Hitter {
     var name:String
     var average:Double
+    var imageName:String
     
     init(name:String) {
         self.name = name
         self.average = 0.0
+        self.imageName = "DefaultImage"
     }
 }
 
