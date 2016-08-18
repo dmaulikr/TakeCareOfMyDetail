@@ -75,7 +75,8 @@ class PlanTableViewController: UITableViewController {
         
         //목적지 뷰 컨트롤러에 선택된 오브젝트 전달
         //받을수있는 준비 시키기
-        destVC.currentPlan = selected
+        destVC.currentPlan = selected // as에다가 ?로 처리할거면 destVC에서 처리해야
+        
         
     }
 

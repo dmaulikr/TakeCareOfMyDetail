@@ -20,7 +20,22 @@ class PlayerDetailViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         PlayerNameLabel.text = currentFruit?.name
-        let fruitDetails:String = "색깔은 \(currentFruit!.color) 이구요.\n원산지는 \(currentFruit!.country)네요.\n제철은 \(currentFruit!.season)입니다."
+        
+        var fruitDetails:String = ""
+        
+        if let currentColor = (currentFruit?.color) {
+            fruitDetails += "색깔은 \(currentColor)이구요.\n"
+        }
+        
+        if let currentCountry = (currentFruit?.country) {
+            fruitDetails += "원산지는 \(currentCountry)이구요.\n"
+        }
+        
+
+        if let currentSeason = (currentFruit?.season) {
+            fruitDetails += "제철은 \(currentSeason)입니다."
+        }
+        
         PlayerDetailLabel.text = fruitDetails
         
         

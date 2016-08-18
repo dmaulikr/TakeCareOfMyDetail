@@ -1,34 +1,29 @@
 //
-//  PlayerTableViewController.swift
-//  EunjinDetail
+//  MusicTableViewController.swift
+//  ChangukangDetail
 //
-//  Created by eunjin Jo on 2016. 8. 11..
-//  Copyright © 2016년 eunjin. All rights reserved.
+//  Created by kang on 2016. 8. 11..
+//  Copyright © 2016년 iOS_Learn. All rights reserved.
 //
 
 import UIKit
 
-class PlayerTableViewController: UITableViewController {
-    
-    var fruitlist:[Fruit] = []
 
+class MusicTableViewController: UITableViewController {
+    
+    
+    
+    
+    var musics:[Music] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let fruit1 = Fruit(name: "apple", price: 1000, color: "red", country: "korea", season: "fall")
-        let fruit2 = Fruit(name: "tomato", price: 500, color: "red", country: "spain", season: "winter")
-        let fruit3 = Fruit(name: "watermelon", price: 10000, color: "red", country: "japan", season: "summer")
-        let fruit4 = Fruit(name: "cherry", price: 3000, color: "purple", country: "chile", season: "summer")
-        let fruit5 = Fruit(name: "banana", price: 2600, color: "yellow", country: "philippines", season: "summer")
-        let fruit6 = Fruit(name: "orange", price: 5000, color: "orange", country: "hawaii", season: "summer")
+        let IU = Music(singer:"아이유", genre:"ballad", rank:1)
+        let Skrillex = Music(singer:"스크릴렉스" ,genre:"edm",rank:2)
         
-        fruitlist += [fruit1,fruit2,fruit3,fruit4,fruit5,fruit6]
+        
+        musics += [IU, Skrillex]
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,20 +40,18 @@ class PlayerTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return fruitlist.count
+        return musics.count
     }
 
-    
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("MusicCell", forIndexPath: indexPath)
 
-         //Configure the cell...
-        let currentFruit = fruitlist[indexPath.row]
-        cell.textLabel?.text = currentFruit.name
-        cell.detailTextLabel?.text = "\(currentFruit.price) 원"
         
+        let currentSingner = musics[indexPath.row]
+        cell.textLabel?.text = currentSingner.singer
+        cell.detailTextLabel?.text = "\(currentSingner.genre)"
         
-
         return cell
     }
     
@@ -98,26 +91,14 @@ class PlayerTableViewController: UITableViewController {
     }
     */
 
-
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        // 목적지 뷰 컨트롤러 확보 + 테이블 뷰에서 선택된 오브젝트 확보
-        if let destVC = segue.destinationViewController as? PlayerDetailViewController, let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow {
-        
-                let selected:Fruit = self.fruitlist[selectedIndex.row]
-                
-                // 목적지 뷰 컨트롤러에 선택된 오브젝트 전달
-                destVC.currentFruit = selected
-            
-            
-        }
-        
-        
-        
     }
+    */
 
 }

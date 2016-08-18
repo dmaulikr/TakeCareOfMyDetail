@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SingerDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

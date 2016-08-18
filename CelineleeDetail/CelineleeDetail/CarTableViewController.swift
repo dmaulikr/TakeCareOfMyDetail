@@ -42,7 +42,7 @@ class CarTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return cars.count
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,7 +55,7 @@ class CarTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("CarCell", forIndexPath: indexPath)
 
         //configure the cell...
-            let currentCar = cars[indexPath.row]
+        let currentCar = cars[indexPath.row]
         cell.textLabel!.text = currentCar.model
         cell.detailTextLabel?.text = String(currentCar.cost)
 
@@ -98,14 +98,22 @@ class CarTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let destVC = segue.destinationViewController as! CarDetailViewController
+        
+        
+        let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
+        let selected:Car = self.cars[selectedIndex.row]
+        destVC.currentCar = selected
+        //let selected:
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

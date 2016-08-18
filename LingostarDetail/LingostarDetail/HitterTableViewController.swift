@@ -11,16 +11,18 @@ import UIKit
 class Hitter {
     var name:String
     var average:Double
+    var imageName:String
     
     init(name:String) {
         self.name = name
         self.average = 0.0
+        self.imageName = "DefaultImage"
     }
 }
 
 class HitterTableViewController: UITableViewController {
 
-    var hitters:[Hitter] = []
+    var hitters:[String:[Hitter]] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +38,15 @@ class HitterTableViewController: UITableViewController {
         mino.average = 3.00
         let muno = Hitter(name: "김문호")
         muno.average = 3.12
+        let lotte:[Hitter] = [mino, muno]
         
-        hitters += [mino, muno]
+        let jaewon = Hitter(name:"오재원")
+        jaewon.average = 2.1
+        let weiji = Hitter(name:"양의지")
+        weiji.average = 2.99
+        let doosan:[Hitter] = [jaewon, weiji]
+        
+        hitters = ["롯데":lotte, "두산":doosan]
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,25 +58,39 @@ class HitterTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return hitters.count
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return hitters.count
+        let teamNames:[String] = Array(hitters.keys)
+        let teamName:String = teamNames[section]
+        let teamHitters:[Hitter] = hitters[teamName]!
+        return teamHitters.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("HitterCell", forIndexPath: indexPath)
 
-        let hitterForCell = hitters[indexPath.row]
+        let teamNames:[String] = Array(hitters.keys)
+        let teamName:String = teamNames[indexPath.section]
+        
+        let teamForCell:[Hitter] = hitters[teamName]!
+        let hitterForCell = teamForCell[indexPath.row]
+        
         cell.textLabel!.text = hitterForCell.name
         cell.detailTextLabel?.text = String(hitterForCell.average)
 
         return cell
     }
     
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let teamNames:[String] = Array(hitters.keys)
+        let teamName:String = teamNames[section]
+        
+        return teamName
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -116,7 +139,12 @@ class HitterTableViewController: UITableViewController {
         
         //테이블 뷰에서 선택된 오브젝트 확보
         let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
-        let selected:Hitter = self.hitters[selectedIndex.row]
+        
+        let teamNames:[String] = Array(hitters.keys)
+        let teamName:String = teamNames[selectedIndex.section]
+        
+        let teamForCell:[Hitter] = hitters[teamName]!
+        let selected:Hitter = teamForCell[selectedIndex.row]
         
         //목적지 뷰 컨트롤러에 선택된 오브젝트 전달
         destVC.currentHitter = selected

@@ -14,6 +14,8 @@
 		3DBF18B61D5C364C00F7CD97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DBF18B41D5C364C00F7CD97 /* LaunchScreen.storyboard */; };
 		3DBF18C11D5C364C00F7CD97 /* ChangukangDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF18C01D5C364C00F7CD97 /* ChangukangDetailTests.swift */; };
 		3DBF18CC1D5C364C00F7CD97 /* ChangukangDetailUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF18CB1D5C364C00F7CD97 /* ChangukangDetailUITests.swift */; };
+		3DBF18DA1D5C37FC00F7CD97 /* FavMusicList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF18D91D5C37FC00F7CD97 /* FavMusicList.swift */; };
+		3DBF18E51D5C40F800F7CD97 /* MusicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBF18E41D5C40F800F7CD97 /* MusicTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3DBF18C71D5C364C00F7CD97 /* ChangukangDetailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChangukangDetailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBF18CB1D5C364C00F7CD97 /* ChangukangDetailUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangukangDetailUITests.swift; sourceTree = "<group>"; };
 		3DBF18CD1D5C364C00F7CD97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DBF18D91D5C37FC00F7CD97 /* FavMusicList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavMusicList.swift; sourceTree = "<group>"; };
+		3DBF18E41D5C40F800F7CD97 /* MusicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				3DBF18B21D5C364C00F7CD97 /* Assets.xcassets */,
 				3DBF18B41D5C364C00F7CD97 /* LaunchScreen.storyboard */,
 				3DBF18B71D5C364C00F7CD97 /* Info.plist */,
+				3DBF18E41D5C40F800F7CD97 /* MusicTableViewController.swift */,
+				3DBF18D91D5C37FC00F7CD97 /* FavMusicList.swift */,
 			);
 			path = ChangukangDetail;
 			sourceTree = "<group>";
@@ -257,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DBF18AE1D5C364C00F7CD97 /* ViewController.swift in Sources */,
+				3DBF18E51D5C40F800F7CD97 /* MusicTableViewController.swift in Sources */,
 				3DBF18AC1D5C364C00F7CD97 /* AppDelegate.swift in Sources */,
+				3DBF18DA1D5C37FC00F7CD97 /* FavMusicList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,10 +409,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ChangukangDetail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kang.ChangukangDetail;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -412,6 +422,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ChangukangDetail/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kang.ChangukangDetail;
