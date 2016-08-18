@@ -10,14 +10,24 @@ import UIKit
 
 class FallSemesterTableViewController: UITableViewController {
 
+    @IBOutlet var ClassName: UILabel!
+    @IBOutlet var classprofessor: UILabel!
+    
+    //var currentClass:FallClass = nil?
+    var fallClasses:Array<FallClass>=[]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
+        
+        
         let iMEN216 = FallClass(classID : "IMEN216",className :"OR-I 및 실습", classpoint : 3, professor :"최인찬", classType : .Essential )
         
+        let iMEN212 = FallClass(classID : "IMEN212",className :"자료구조 및 알고리즘", classpoint : 3, professor :"반기민", classType : .Essential )
         
-        
+        fallClasses += [iMEN216, iMEN212]
         
         
         
@@ -26,6 +36,10 @@ class FallSemesterTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,23 +51,30 @@ class FallSemesterTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return fallClasses.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("fallclasscell", forIndexPath: indexPath)
 
         // Configure the cell...
+        
+        let classNames = fallClasses[indexPath.row].className
+        
+        let striggg = "hohohoho"
+        //let classNamae = classNames[indexPath.row]
+        cell.textLabel!.text = classNames
+        cell.detailTextLabel!.text = striggg
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -97,7 +118,17 @@ class FallSemesterTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-    }
-    */
+        
+        if let destVC = segue.destinationViewController as? ViewController, let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow{
+            // 테이블 뷰에서 선택된 오브젝트 확보
+            
+            let selected:FallClass = FallClass![selectedIndex.row]
+            // 목적지 뷰 컨트롤러에 선택된 오브젝트 전달
+            destVC.currentTravelr = selected
+        
+        
+        
+    } */ 
+    
 
 }
