@@ -103,11 +103,11 @@ class EventTableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
-        if let destVC = segue.destinationViewController as? EventDetailViewController ,  let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow {
-            let selected:Event = self.events[selectedIndex.row]
-            destVC.currentEvent = selected
-        }
+        let destVC = segue.destinationViewController as! EventDetailViewController
+        let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
+        let selected:Event = self.events[selectedIndex.row]
         
+        destVC.currentEvent = selected
 
     }
     

@@ -20,11 +20,9 @@ class EventDetailViewController:UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        if let theEvent = currentEvent {
-            eventName.text = theEvent.name
-            eventDetail.text = theEvent.memo
-        }
         
+        eventName.text = currentEvent?.name
+        eventDetail.text = currentEvent?.memo
     }
     
     override func didReceiveMemoryWarning() {
