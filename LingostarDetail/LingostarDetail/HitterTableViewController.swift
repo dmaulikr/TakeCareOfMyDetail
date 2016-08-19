@@ -47,7 +47,10 @@ class HitterTableViewController: UITableViewController {
         let doosan:[Hitter] = [jaewon, weiji]
         
         hitters = ["롯데":lotte, "두산":doosan]
+
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -71,16 +74,17 @@ class HitterTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("HitterCell", forIndexPath: indexPath)
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("HitterCell", forIndexPath: indexPath) as! HitterTableViewCell
+        
         let teamNames:[String] = Array(hitters.keys)
         let teamName:String = teamNames[indexPath.section]
         
         let teamForCell:[Hitter] = hitters[teamName]!
         let hitterForCell = teamForCell[indexPath.row]
         
-        cell.textLabel!.text = hitterForCell.name
-        cell.detailTextLabel?.text = String(hitterForCell.average)
+        cell.nameLabel.text = hitterForCell.name
+        cell.averageLabel.text = String(hitterForCell.average)
+        cell.teamNameLabel.text = teamName
 
         return cell
     }
