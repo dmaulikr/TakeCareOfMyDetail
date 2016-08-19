@@ -41,6 +41,27 @@ enum Currency:Int {
 }
 
 
+
+//category설정
+func setCategory(n:Int) -> (String) {
+    let categories:Array<String> = ["eating" ,"sleeping", "transport", "shopping", "tour", "etc"] // tour는 관광비(티켓,입장료등) <- 나중에 아이콘으로 표시할시에 img파일로 받는 것으로 바꿔줘야함
+    let category = categories[n]
+    return category
+}
+
+
+
+
+//card,cash 설정
+func setPay(n:Int) -> (String) {
+    let pays:Array<String> = ["card" ,"cash"]
+    let pay = pays[n]
+    return pay
+}
+
+
+
+
 // 지출 항목 클래스
 class Item {
     
@@ -52,12 +73,12 @@ class Item {
     var numberOfPerson : Int // 피커로 인원수 받기
     var photo : UIImage?
     
-    init(_ _price:Double, _ _currency:Currency, _ _pay:String, _ _category:String, _ _numberofperson:Int ){
+    init(_ _price:Double, _ _currency:Currency, _ _pay:Int, _ _category:Int, _ _numberofperson:Int ){
         
         price = _price
         currency = _currency
-        pay = _pay
-        category = _category
+        pay = setPay(_pay)
+        category = setCategory(_category)
         numberOfPerson = _numberofperson
         
     }
@@ -81,6 +102,9 @@ class Item {
 }
 
 
+
+
+
 // 카드,현금 각각의 예산클래스
 class Budget {
     
@@ -89,9 +113,9 @@ class Budget {
     var BudgetCurrency:Currency // 원, 달러, 엔, 유로, 파운드, 위안
     
     // 카드 예산의 경우 화폐단위를 원화로 하기
-    init(_ _cardorcash:String,_ _money:Double,_ _currency:Currency){
+    init(_ _cardorcash:Int,_ _money:Double,_ _currency:Currency){
         
-        CardOrCash = _cardorcash
+        CardOrCash = setPay(_cardorcash)
         Money = _money
         BudgetCurrency = _currency
         
@@ -102,6 +126,10 @@ class Budget {
         return  Money * BudgetCurrency.ratio
     }
 }
+
+
+
+
 
 
 // 여행 클래스
@@ -169,7 +197,7 @@ class TravelWhere {
             }
         }
         
-        let cardremain = initCardBudget.Money-cardspend
+        let cardremain = initCardBudget.Money - cardspend*indexCurrency.ratio
         
         let filterdCashBudget = initCashBudget.filter({$0.BudgetCurrency.symbol == indexCurrency.symbol}) // 현금 예산 중 기준 화폐단위와 일치하는거 골라냄
         let cashremain = filterdCashBudget[0].Money-cashspend // 기준화폐단위와 일치하는 예산은 하나 일 것이기 때문에 [0] 써도 무관

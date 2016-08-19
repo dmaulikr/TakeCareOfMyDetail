@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B26D7E91D669988000D54F9 /* AnotherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26D7E81D669988000D54F9 /* AnotherTableViewCell.swift */; };
+		9B26D7ED1D66BC29000D54F9 /* AdditemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B26D7EC1D66BC29000D54F9 /* AdditemViewController.swift */; };
 		9B988D0F1D622D5000ADCC5E /* TravelrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B988D0E1D622D5000ADCC5E /* TravelrViewController.swift */; };
+		9BA71F8B1D62A6BE00666466 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA71F8A1D62A6BE00666466 /* ItemDetailViewController.swift */; };
 		9BB3D8611D603B330035F34C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3D8601D603B330035F34C /* AppDelegate.swift */; };
 		9BB3D8631D603B330035F34C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB3D8621D603B330035F34C /* ViewController.swift */; };
 		9BB3D8661D603B330035F34C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BB3D8641D603B330035F34C /* Main.storyboard */; };
@@ -18,7 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B26D7E81D669988000D54F9 /* AnotherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherTableViewCell.swift; sourceTree = "<group>"; };
+		9B26D7EC1D66BC29000D54F9 /* AdditemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditemViewController.swift; sourceTree = "<group>"; };
 		9B988D0E1D622D5000ADCC5E /* TravelrViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelrViewController.swift; sourceTree = "<group>"; };
+		9BA71F8A1D62A6BE00666466 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		9BB3D85D1D603B330035F34C /* TravelrDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelrDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BB3D8601D603B330035F34C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BB3D8621D603B330035F34C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +75,9 @@
 				9BB3D8721D603B520035F34C /* TravelrTableViewController.swift */,
 				9BB3D8741D603B610035F34C /* Travelr.swift */,
 				9B988D0E1D622D5000ADCC5E /* TravelrViewController.swift */,
+				9BA71F8A1D62A6BE00666466 /* ItemDetailViewController.swift */,
+				9B26D7E81D669988000D54F9 /* AnotherTableViewCell.swift */,
+				9B26D7EC1D66BC29000D54F9 /* AdditemViewController.swift */,
 			);
 			path = TravelrDetail;
 			sourceTree = "<group>";
@@ -145,7 +154,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BB3D8751D603B610035F34C /* Travelr.swift in Sources */,
+				9B26D7ED1D66BC29000D54F9 /* AdditemViewController.swift in Sources */,
+				9B26D7E91D669988000D54F9 /* AnotherTableViewCell.swift in Sources */,
 				9BB3D8731D603B520035F34C /* TravelrTableViewController.swift in Sources */,
+				9BA71F8B1D62A6BE00666466 /* ItemDetailViewController.swift in Sources */,
 				9BB3D8631D603B330035F34C /* ViewController.swift in Sources */,
 				9BB3D8611D603B330035F34C /* AppDelegate.swift in Sources */,
 				9B988D0F1D622D5000ADCC5E /* TravelrViewController.swift in Sources */,

@@ -1,5 +1,5 @@
 //
-//  TravelrViewController.swift
+//  ItemDetailViewController.swift
 //  TravelrDetail
 //
 //  Created by 이우재 on 2016. 8. 16..
@@ -8,31 +8,28 @@
 
 import UIKit
 
-class TravelrViewController: UIViewController {
+class ItemDetailViewController: UIViewController {
 
+        
+    @IBOutlet weak var category: UILabel!
     
-    @IBOutlet weak var cardWonSpend: UILabel!
+    @IBOutlet weak var numOfPerson: UILabel!
     
-    @IBOutlet weak var cardYenSpend: UILabel!
-    
-    @IBOutlet weak var cashWonSpend: UILabel!
-    
-    @IBOutlet weak var cashYenSpend: UILabel!
+    var currentItem:Item?
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
-//        cardWonSpend.text = "Won" + String(japanTravel.MoneyByPayCurrency(Currency(rawValue: 0)!).cardSpend)
-//        cardYenSpend.text = "Yen" + String(japanTravel.MoneyByPayCurrency(Currency(rawValue: 2)!).cardSpend)
-//        cashWonSpend.text = "Won" + String(japanTravel.MoneyByPayCurrency(Currency(rawValue: 0)!).cashSpend)
-//        cashYenSpend.text = "Yen" + String(japanTravel.MoneyByPayCurrency(Currency(rawValue: 2)!).cashSpend)
+        
+        category.text = currentItem!.category
+        numOfPerson.text = String(currentItem!.numberOfPerson)
 
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
         // Dispose of any resources that can be recreated.
     }
     
