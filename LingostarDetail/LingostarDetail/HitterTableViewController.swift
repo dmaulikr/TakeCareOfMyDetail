@@ -18,7 +18,7 @@ class Hitter {
         self.average = 0.0
         self.imageName = "DefaultImage"
     }
-}
+} // Hitter class 설계
 
 class HitterTableViewController: UITableViewController {
 
@@ -47,12 +47,12 @@ class HitterTableViewController: UITableViewController {
         let doosan:[Hitter] = [jaewon, weiji]
         
         hitters = ["롯데":lotte, "두산":doosan]
-
-    }
+        //뷰가 로드되기 전에 hitters 딕션에 롯데와 두산 저장
+    } //뷰 로드되기 전에 하는 일.
     
     @IBAction func toHitterList(unwind:UIStoryboardSegue) {
         
-    }
+    } //이건 뭐냐.
     
     
     func addNew(newHitter:Hitter) {
@@ -63,7 +63,7 @@ class HitterTableViewController: UITableViewController {
         hitters["두산"] = doosanList
         
         self.tableView.reloadData()
-    }
+    } //Hitter를 받아서 두산 뒤에 확장하고 테이블을 리로드
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -76,19 +76,20 @@ class HitterTableViewController: UITableViewController {
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return hitters.count
-    }
+    } // 섹션의 개수를 리턴
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView,
+                            numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         let teamNames:[String] = Array(hitters.keys)
         let teamName:String = teamNames[section]
         let teamHitters:[Hitter] = hitters[teamName]!
         return teamHitters.count
-    }
-
+    }//섹션의 이름을 지정하고 각 섹션당 몇 줄인지 리턴함 //Nearbuy 에선 불필요
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("HitterCell", forIndexPath: indexPath) as! HitterTableViewCell
+    override func tableView(tableView: UITableView,
+                            cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("HitterCell", forIndexPath: indexPath) as! HitterTableViewCell //cell의 파일을 HitterTableViewCell로 지정.
         
         let teamNames:[String] = Array(hitters.keys)
         let teamName:String = teamNames[indexPath.section]
@@ -101,9 +102,10 @@ class HitterTableViewController: UITableViewController {
         cell.teamNameLabel.text = teamName
 
         return cell
-    }
+    } // cell 내부 지정.
     
-    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    override func tableView(tableView: UITableView,
+                            titleForHeaderInSection section: Int)-> String? {
         let teamNames:[String] = Array(hitters.keys)
         let teamName:String = teamNames[section]
         
@@ -170,21 +172,4 @@ class HitterTableViewController: UITableViewController {
             destVC.currentHitter = selected
         }
     }
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }
