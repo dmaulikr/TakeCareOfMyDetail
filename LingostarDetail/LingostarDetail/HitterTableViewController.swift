@@ -50,10 +50,24 @@ class HitterTableViewController: UITableViewController {
 
     }
     
+    @IBAction func toHitterList(unwind:UIStoryboardSegue) {
+        
+    }
     
+    
+    func addNew(newHitter:Hitter) {
+        
+        var doosanList = hitters["두산"]
+        doosanList?.append(newHitter)
+        
+        hitters["두산"] = doosanList
+        
+        self.tableView.reloadData()
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
 
@@ -138,20 +152,23 @@ class HitterTableViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        //목적지 뷰 컨트롤러 확보
-        let destVC = segue.destinationViewController as! HitterDetailViewController
         
-        //테이블 뷰에서 선택된 오브젝트 확보
-        let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
-        
-        let teamNames:[String] = Array(hitters.keys)
-        let teamName:String = teamNames[selectedIndex.section]
-        
-        let teamForCell:[Hitter] = hitters[teamName]!
-        let selected:Hitter = teamForCell[selectedIndex.row]
-        
-        //목적지 뷰 컨트롤러에 선택된 오브젝트 전달
-        destVC.currentHitter = selected
+        if segue.identifier == "DetailSegue" {
+            //목적지 뷰 컨트롤러 확보
+            let destVC = segue.destinationViewController as! HitterDetailViewController
+            
+            //테이블 뷰에서 선택된 오브젝트 확보
+            let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
+            
+            let teamNames:[String] = Array(hitters.keys)
+            let teamName:String = teamNames[selectedIndex.section]
+            
+            let teamForCell:[Hitter] = hitters[teamName]!
+            let selected:Hitter = teamForCell[selectedIndex.row]
+            
+            //목적지 뷰 컨트롤러에 선택된 오브젝트 전달
+            destVC.currentHitter = selected
+        }
     }
 
 

@@ -39,9 +39,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="CU5-wG-eNn"/>
-                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HitterCell" rowHeight="90" id="oCI-9g-dMc" customClass="HitterTableViewCell" customModule="LingostarDetail" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="182" width="600" height="90"/>
@@ -97,6 +94,7 @@
                                     <outlet property="nameLabel" destination="XHs-jG-qwf" id="sa5-cl-x42"/>
                                     <outlet property="profileImageView" destination="fHl-y8-7Hf" id="OWp-zQ-yX4"/>
                                     <outlet property="teamNameLabel" destination="71C-qK-t6x" id="50U-I9-2CH"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="DetailSegue" id="9Ut-81-SqW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -105,11 +103,90 @@
                             <outlet property="delegate" destination="CDV-rF-5zL" id="XaR-0i-vVy"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="RMJ-9B-x10"/>
+                    <navigationItem key="navigationItem" id="RMJ-9B-x10">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2cy-28-XWL">
+                            <connections>
+                                <segue destination="tTl-uj-pDp" kind="presentation" id="4yI-8h-SUU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2af-eW-31b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="420" y="424"/>
+        </scene>
+        <!--Add New Hitter View Controller-->
+        <scene sceneID="9Lt-l9-wfr">
+            <objects>
+                <viewController id="Zgk-Ad-JSK" customClass="AddNewHitterViewController" customModule="LingostarDetail" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oVg-qr-i8Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="cPa-pN-9NG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nmD-3t-OYQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이름 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DF5-30-0Mg">
+                                <rect key="frame" x="20" y="76" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="박건우" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hWV-hH-Ser">
+                                <rect key="frame" x="66" y="72" width="296" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="타율 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDW-Q5-Tab">
+                                <rect key="frame" x="20" y="114" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3.01" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4X8-UW-VwG">
+                                <rect key="frame" x="66" y="110" width="296" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="팀 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyI-E2-1L7">
+                                <rect key="frame" x="34" y="152" width="29" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="두산" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rcU-Sd-dLH">
+                                <rect key="frame" x="66" y="148" width="296" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="8MX-AL-H6X">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="RmQ-dv-7Lw">
+                            <connections>
+                                <segue destination="1XJ-af-htv" kind="unwind" identifier="CancelUnwind" unwindAction="toHitterList:" id="htP-73-f4Q"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="a6X-8V-pPO">
+                            <connections>
+                                <segue destination="1XJ-af-htv" kind="unwind" identifier="DoneUnwind" unwindAction="toHitterList:" id="at6-1x-lQA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="averageField" destination="4X8-UW-VwG" id="gcs-O6-9P8"/>
+                        <outlet property="nameField" destination="hWV-hH-Ser" id="sXn-at-tsD"/>
+                        <outlet property="teamField" destination="rcU-Sd-dLH" id="tKH-oH-B8U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KNX-2O-PTi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="1XJ-af-htv" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1919" y="-331"/>
         </scene>
         <!--Hitter Detail View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -164,6 +241,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="elo-vX-ORY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-392" y="424"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="RWg-0Z-rmE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tTl-uj-pDp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IYl-xm-Wma">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zgk-Ad-JSK" kind="relationship" relationship="rootViewController" id="ffu-xx-UIG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WIo-6g-Hjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1107" y="-331"/>
         </scene>
     </scenes>
 </document>

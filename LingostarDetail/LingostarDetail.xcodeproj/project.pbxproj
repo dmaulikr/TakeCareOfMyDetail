@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C2773361D62A430006784D1 /* HitterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2773351D62A430006784D1 /* HitterTableViewController.swift */; };
 		2CE09AF31D669983007F2EA9 /* HitterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE09AF21D669983007F2EA9 /* HitterTableViewCell.swift */; };
+		2CE09AF51D66A355007F2EA9 /* AddNewHitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE09AF41D66A355007F2EA9 /* AddNewHitterViewController.swift */; };
 		2CF9F83A1D5C362B001767AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9F8391D5C362B001767AC /* AppDelegate.swift */; };
 		2CF9F83C1D5C362B001767AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF9F83B1D5C362B001767AC /* ViewController.swift */; };
 		2CF9F83F1D5C362B001767AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF9F83D1D5C362B001767AC /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		2C2773351D62A430006784D1 /* HitterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitterTableViewController.swift; sourceTree = "<group>"; };
 		2CE09AF21D669983007F2EA9 /* HitterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HitterTableViewCell.swift; sourceTree = "<group>"; };
+		2CE09AF41D66A355007F2EA9 /* AddNewHitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewHitterViewController.swift; sourceTree = "<group>"; };
 		2CF9F8361D5C362B001767AC /* LingostarDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LingostarDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CF9F8391D5C362B001767AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CF9F83B1D5C362B001767AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				2CF9F8391D5C362B001767AC /* AppDelegate.swift */,
 				2CF9F83B1D5C362B001767AC /* ViewController.swift */,
 				2CF9F83D1D5C362B001767AC /* Main.storyboard */,
+				2CE09AF41D66A355007F2EA9 /* AddNewHitterViewController.swift */,
 				2CE09AF21D669983007F2EA9 /* HitterTableViewCell.swift */,
 				2C2773351D62A430006784D1 /* HitterTableViewController.swift */,
 				2CF9F8401D5C362B001767AC /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CE09AF51D66A355007F2EA9 /* AddNewHitterViewController.swift in Sources */,
 				2CF9F83C1D5C362B001767AC /* ViewController.swift in Sources */,
 				2C2773361D62A430006784D1 /* HitterTableViewController.swift in Sources */,
 				2CF9F83A1D5C362B001767AC /* AppDelegate.swift in Sources */,
