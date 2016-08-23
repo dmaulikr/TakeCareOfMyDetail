@@ -56,7 +56,9 @@ class HitterTableViewController: UITableViewController {
             let jsonDictionary:NSDictionary = try NSJSONSerialization.JSONObjectWithData(jsonData!, options: .MutableContainers) as! Dictionary<String, AnyObject>
             print(jsonDictionary)
             print(jsonDictionary["teamName"])
-            let teamName = jsonDictionary["teamName"] as! String
+            guard let teamName = jsonDictionary["teamName"] as? String else {
+                return
+            }
             
             let jsonHitters = jsonDictionary["hitters"] as! Array<Dictionary<String,String>>
             var hitterObjArray:[Hitter] = []
