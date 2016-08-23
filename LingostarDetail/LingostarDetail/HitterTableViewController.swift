@@ -48,6 +48,16 @@ class HitterTableViewController: UITableViewController {
         
         hitters = ["롯데":lotte, "두산":doosan]
 
+        let lotteURL = NSURL(string: "https://projectintheclass.github.io/TakeCareOfMyDetail/API/lotte.json")
+        
+        do { let jsonString =  try String(contentsOfURL:lotteURL!)
+            print(jsonString)
+        } catch {
+        
+        }
+        
+        self.navigationItem.leftBarButtonItem = self.editButtonItem()
+        //let jsonObj = NSJSONSerialization()
     }
     
     @IBAction func toHitterList(unwind:UIStoryboardSegue) {
