@@ -46,18 +46,34 @@ class HitterTableViewController: UITableViewController {
         weiji.average = 2.99
         let doosan:[Hitter] = [jaewon, weiji]
         
-        hitters = ["롯데":lotte, "두산":doosan]
+        hitters = ["두산":doosan]
 
         let lotteURL = NSURL(string: "https://projectintheclass.github.io/TakeCareOfMyDetail/API/lotte.json")
         
-        do { let jsonString =  try String(contentsOfURL:lotteURL!)
-            print(jsonString)
+        do {
+            let jsonData =  try NSData(contentsOfURL:lotteURL!)
+            //print(jsonString)
+            let jsonDictionary:NSDictionary = try NSJSONSerialization.JSONObjectWithData(jsonData!, options: .MutableContainers) as! Dictionary<String, AnyObject>
+            print(jsonDictionary)
+            print(jsonDictionary["teamName"])
+            let teamName = jsonDictionary["teamName"] as! String
+            
+            let jsonHitters = jsonDictionary["hitters"] as! Array<Dictionary<String,String>>
+            var hitterObjArray:[Hitter] = []
+            for hitter in jsonHitters {
+                let newHitter = Hitter(name:hitter["name"]!)
+                newHitter.average = Double(hitter["average"]!)!
+                hitterObjArray += [newHitter]
+            }
+            
+            hitters[teamName] = hitterObjArray
         } catch {
         
         }
         
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
         //let jsonObj = NSJSONSerialization()
+        
     }
     
     @IBAction func toHitterList(unwind:UIStoryboardSegue) {
